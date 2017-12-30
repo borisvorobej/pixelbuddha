@@ -1,0 +1,121 @@
+.input-wrapper
+  display inline-block
+  position relative
+
+  .input
+    width 100%
+
+    &:invalid
+      border-color $error
+      color $error
+
+      & ~ .input-notice
+        color $error
+
+    &:valid
+      border-color $green-cold
+
+      + .input-icon.-success
+        display block
+
+      ~ .input-notice
+        display none
+
+  &.-success
+    .input
+      border-color $green-cold
+
+    .input-icon.-success
+      display block
+
+  &.-error
+    .input
+      border-color $error
+      color $error
+
+    .input-notice
+      color $error
+
+.input-icon
+  position absolute
+  display none
+  right 32px
+  // top 50%
+  // transform translate(0, -50%)
+
+  &.-success
+    fill $green-cold
+
+.input
+  display inline-block
+  box-sizing border-box
+  border-radius 4px
+  transition border-color .15s ease-in-out, color .15s ease-in-out
+
+  &.-grey
+    color $grey
+    background $grey-lightest-main
+    border-color transparent
+
+    +placeholder()
+      color $grey-light
+
+    &:hover
+      color $grey
+      border-color $grey-light
+
+    &:focus
+      color $grey
+      border-color $violet-border
+
+  &.-default
+    font-size 18px
+    border-width 2px
+    border-style solid
+    padding 15px 28px 14px
+
+    + .input-icon
+      top 28px
+
+  &.-wide
+    width 100%
+
+
+.input-notice
+  display block
+  box-sizing border-box
+  font-size 12px
+  color $grey-light
+  font-weight 400
+  padding 4px 28px
+
+
+.input-info
+  border-radius 4px
+  background $grey-lightest-medium
+  box-sizing border-box
+  padding 16px 25px 18px
+  line-height: 18px;
+  font-size: 13px;
+  display flex
+
+  .input-info-icon
+    flex-grow 0
+    flex-shrink 0
+    margin-right 21px
+    position relative
+    top 4px
+
+  &.-notice
+    background $violet-border
+    color $white
+
+    .input-info-icon
+      fill $white
+
+  &.-error
+    background $error
+    color $white
+
+    .input-info-icon
+      fill $white

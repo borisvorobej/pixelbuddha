@@ -1,0 +1,142 @@
+// @font-face
+//   font-family 'iconfont'
+//   src url('../fonts/iconfont/iconfont.eot')
+//   src url('../fonts/iconfont/iconfont.eot') format('embedded-opentype'),
+//     url('../fonts/iconfont/iconfont.ttf') format('truetype'),
+//     url('../fonts/iconfont/iconfont.woff') format('woff'),
+//     url('../fonts/iconfont/iconfont.woff2') format('woff2')
+//   font-weight normal
+//   font-style normal
+
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+// @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600&amp;subset=latin-ext');
+// @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i');
+
+h1, h2, h3, h4, h5, h6
+  font-family Poppins
+  font-weight 600
+
+h1.headline
+  font-size 48px
+  line-height 60px
+  letter-spacing -2px
+
+h2.headline
+  font-size 36px
+  line-height 48px
+  padding-bottom 16px
+  letter-spacing -2px
+
+h3.headline
+  font-size 24px
+  line-height 30px
+  letter-spacing -2px
+
+h4.headline
+  font-size 18px
+  line-height 24px
+  letter-spacing -2px
+
+.headline
+  .icon
+    margin-left 12px
+    position relative
+    top 9px
+
+.headline-big
+  font-family 'Poppins'
+  font-size 72px
+  font-weight 600
+  letter-spacing -4px
+
+.headline-description
+  color $gray-text
+  font-size 20px
+  letter-spacing -.25
+  line-height 30px
+  padding-bottom 24px
+
+  &.-small
+    font-size 16px
+    line-height 24px
+    letter-spacing 0
+    padding-bottom 14px
+
+  &.-white
+    color $white
+
+.sub-headline
+  font-family 'Poppins'
+  font-size 16px
+  letter-spacing 5px
+  text-transform uppercase
+
+  &.-top
+    font-size 20px
+    color rgba(0,0,0,.5)
+    text-align center
+
+.headline-author
+  font-size 16px
+
+  a
+    font-family 'Playfair Display'
+    font-style italic
+    text-decoration none
+    border-bottom 1px solid $black
+    transition color .15s
+
+    &:hover
+      border-bottom none
+
+@media (max-width 1000px)
+  h1.headline
+    font-size 40px
+    line-height 50px
+
+  h2.headline
+    font-size 30px
+    line-height 36px
+    letter-spacing -1px
+    padding-bottom 12px
+
+  h3.headline
+    font-size 22px
+    line-height 28px
+
+  h4.headline
+    font-size 18px
+    line-height 24px
+
+  .headline-big
+    font-size 60px
+    letter-spacing -3.5px
+
+  // .headline-description
+  //   font-size 16px
+  //   line-height 26px
+  //   padding-bottom 14px
+
+@media (max-width 700px)
+  h1.headline
+    font-size 30px
+    line-height 40px
+
+  h2.headline
+    font-size 24px
+    line-height 34px
+    letter-spacing -1px
+    padding-bottom 12px
+
+  h3.headline
+    font-size 18px
+    line-height 24px
+
+  h4.headline
+    font-size 14px
+    line-height 18px
+
+  .headline-big
+    font-size 40px
+    line-height 48px
+    letter-spacing -2px

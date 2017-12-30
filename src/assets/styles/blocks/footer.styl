@@ -1,0 +1,329 @@
+.main-footer
+  background $grey-darkest
+  transform translate(0, 0)
+  transition transform .25s ease-in-out
+  will-change transform
+
+  &.-main-menu-mobile-active
+    transform translate($main-menu-mobile-width, 0)
+
+  &.-main-user-mobile-active
+    transform translate(-($main-user-mobile-width), 0)
+
+.main-footer-wrapper
+  padding 100px 0 72px
+  clearfix()
+
+.main-footer-copyrights
+  float left
+  width 270px
+  margin-right 91px
+
+.main-footer-copyrights-sitename
+  color #b6b6b6
+  font-size 14px
+  font-weight 500
+  padding-bottom 20px
+
+.main-footer-copyrights-desription
+  color $grey-light-medium
+  font-size 14px
+  line-height 23px
+
+.main-footer-social
+  float right
+  width 220px
+
+.main-footer-content
+  float left
+  width calc(100% - 640px)
+  margin-top -8px
+
+.main-footer-list-wrapper
+  clearfix()
+
+.main-footer-list
+  width 25%
+  float left
+
+.main-footer-list-link
+  display inline-block
+  width 100%
+  box-sizing border-box
+  padding-right 18px
+  font-size 18px
+  font-weight 500
+  line-height 38px
+  color $white
+  text-decoration none
+  transition color .15s linear
+
+  &:hover,
+  &:active
+    text-decoration underline
+
+  &:active
+    transform translate(0, 1px)
+
+  &.-grey
+    color #ABABAB
+
+    &:hover,
+    &:active
+      color $grey-lightest-medium
+      text-decoration none
+
+  &.-violet
+    color $violet
+
+  &.-disabled
+    text-decoration underline
+    color #3b3c3c
+    cursor not-allowed
+
+    &:active
+      transform translate(0, 0)
+
+.footer-small-menu
+  padding-top 33px
+
+.footer-small-menu-copyright
+  display none
+  padding-right 26px
+  color #B6B6B6
+  font-weight 500
+
+.footer-small-menu-list
+  display inline-block
+  margin-left -14px
+
+.footer-small-menu-item
+  display inline-block
+
+  &:last-child .footer-small-menu-link
+    &::after
+      display none
+
+.footer-small-menu-link
+  display inline-block
+  font-size 14px
+  font-weight 500
+  color $grey-light-medium
+  padding-left 14px
+  transition color .15s ease-in-out
+
+  &::after
+    content '/'
+    color $grey-light-medium
+    display inline-block
+    padding 0 0 0 18px
+
+  &:hover
+    color $grey-lightest-medium
+    text-decoration underline
+
+  &:active
+    transform translate(0, 1px)
+
+    &:after
+      transform translate(0, -1px)
+
+  &.-disabled
+    text-decoration underline
+    color #3b3c3c
+    cursor not-allowed
+
+    &:active
+      transform translate(0, 0)
+
+.main-footer-label
+  display block
+  padding-bottom 11px
+  font-size 14px
+  font-weight 500
+  color #ABABAB
+
+.main-footer-subscribe
+  margin-bottom 16px
+
+.main-footer-subscribe-input
+  display inline-block
+  width 100%
+  background #3D3D3D
+  border 1px solid #3D3D3D
+  color #ABABAB
+  border-radius 4px
+  padding 6px 11px
+  font-size 12px
+  transition border-color .2s ease-in-out, background .2s ease-in-out
+
+  &:hover
+    border-color $grey-lightest-medium
+
+  &:focus
+    color $grey
+    font-weight 500
+    border-color $grey-lightest-medium
+    background $grey-lightest-medium
+
+  +placeholder()
+    font-weight 400
+    color #ABABAB
+
+
+.social-list
+  padding 0
+  margin -4px -8px 0
+
+.social-list-link
+  padding 0 8px
+  display inline-block
+  vertical-align middle
+  text-decoration none
+  opacity .8
+  transition opacity .15s ease-in-out
+
+  svg
+    fill $white
+
+  &[disabled]
+    opacity .1
+    cursor not-allowed
+
+    &:hover,
+    &:active
+      opacity .1
+      transform translate(0, 0)
+
+  &:hover,
+  &:active
+    opacity 1
+
+  &:active
+    transform translate(0, 1px)
+
+  &.-disabled
+    opacity .1
+    cursor not-allowed
+
+    &:active
+      transform translate(0, 0)
+
+  &.-tablet
+    display none
+
+
+@media (max-width 1160px)
+  .main-footer-copyrights
+    display none
+
+  .main-footer-content
+    width calc(100% - 279px)
+
+  .main-footer-social
+    margin-top -5px
+
+  .footer-small-menu
+    padding-top 42px
+
+  .footer-small-menu-copyright
+    display inline-block
+
+@media (max-width 992px)
+  .main-footer-wrapper
+    padding 64px 0 64px
+    display flex
+    flex-wrap wrap
+
+  .main-footer-copyrights
+    width calc(50% - 60px)
+    margin-right 60px
+    display block
+    order 0
+
+  .main-footer-copyrights-sitename
+    padding-bottom 9px
+
+  .main-footer-copyrights-desription
+    line-height 22px
+
+  .main-footer-content
+    width 100%
+    margin-top 48px
+    padding-top 48px
+    order 2
+    border-top 2px solid $grey-dark
+
+  .footer-small-menu
+    padding-top 45px
+
+  .footer-small-menu-copyright
+    display none
+
+  .main-footer-social
+    width calc(50% - 21px)
+    order 1
+    margin 0 0 0 21px
+
+  .main-footer-label.-join
+    display none
+
+  .main-footer-subscribe
+    margin-bottom 22px
+
+  .social-list-link
+    &.-tablet
+      display inline-block
+
+@media (max-width 620px)
+  .main-footer
+    background $grey-darkest-deep
+
+  .main-footer-copyrights
+    width 100%
+    margin-right 0
+    text-align center
+
+  .main-footer-content
+    order 1
+    margin-top 44px
+    padding-top 26px
+
+  .main-footer-social
+    order 2
+    padding-top 43px
+    margin-top 26px
+    margin-left 0
+    width 100%
+    text-align center
+    border-top 2px solid $grey-dark
+
+  .main-footer-list
+    width 50%
+    text-align center
+    padding 12px 0
+
+  .main-footer-subscribe-input
+    text-align center
+
+  .main-footer-label.-join
+    display block
+
+  .footer-small-menu
+    width 100%
+    order 4
+    text-align center
+    padding-top 38px
+
+  .main-footer-wrapper
+    padding 36px 0 64px
+
+  .main-footer-copyrights-sitename
+    padding-bottom 15px
+
+  .main-footer-subscribe
+    margin-bottom 14px
+
+  .main-footer-subscribe-input
+    padding 6px 11px
+    font-size 16px

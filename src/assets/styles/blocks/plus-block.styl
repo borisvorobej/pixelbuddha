@@ -1,0 +1,62 @@
+.plus-block
+  background $grey-lightest-main
+  border-radius 4px
+  box-sizing border-box
+  padding 30px 16px
+  text-align center
+  overflow hidden
+
+  &.-indentionTop
+    margin-top 40px
+
+.plus-block-image-wrapper
+  img
+    max-width 100%
+
+.plus-block-headline
+  font-family 'Josefin Sans'
+  font-weight 600
+  font-size 22px
+  letter-spacing -1px
+  padding-top 2px
+
+.plus-block-headline-highlight
+  font-size 16px
+  font-family Roboto
+  font-weight 500
+  color $violet
+  letter-spacing 0
+
+.plus-block-description
+  padding-top 8px
+  font-size 12px
+  line-height 18px
+  text-align center
+  color $grey-light-medium
+  margin 0 20px 23px
+
+.plus-block-image-group
+  margin -31px -18px 14px
+  font-size 0
+
+  img
+    display inline-block
+    width calc(50% - 2px)
+    margin 1px
+
+.plus-block-button
+  width calc(100% - 28px)
+
+
+@media (max-width 620px)
+  .plus-block-image-wrapper img
+    max-width calc(100% - 36px)
+
+  .plus-block-description
+    padding-top 5px
+
+  .plus-block-button
+    width calc(100% - 44px)
+
+  .plus-block-image-group
+    margin -31px -18px 16px

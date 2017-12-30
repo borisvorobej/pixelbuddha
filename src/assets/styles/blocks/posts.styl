@@ -1,0 +1,201 @@
+.posts-list
+  padding-bottom 54px
+  margin -24px -20px
+
+  .post-item,
+  .post-partner
+    width calc(33.33% - 40px)
+    margin 24px 20px
+    position relative
+
+    &:hover
+      .post-headline
+        color $red
+
+      .post-image
+        transform scale(1.2)
+
+    &:active
+      .post-headline
+        color $red-darker
+
+  &.-premium
+    .post-image-wrapper
+      &:before
+        padding-top 67%
+
+  .post-main-link
+    position absolute
+    width 100%
+    height 100%
+    top 0
+    left 0
+
+  .post-image-wrapper
+    width 100%
+    position relative
+    margin-bottom 19px
+    z-index 1
+    overflow hidden
+    border-radius 4px
+
+    &:before
+      content ''
+      display block
+      padding-top 75%
+
+  .post-image
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+    -webkit-backface-visibility hidden
+    background-size cover
+    transition transform .25s ease-in-out
+
+    img
+      width 100%
+
+  .post-tags
+    position relative
+    z-index 1
+    padding 0 0 0
+    margin 0 -3px
+
+  .post-tag-link
+    display inline-block
+    font-size 14px
+    font-weight 600
+    text-decoration none
+    padding 2px 3px
+
+    &:hover
+      text-decoration underline
+
+    &:active
+      transform translate(0, 1px)
+
+    &.-red
+      color $red
+
+      &:hover
+        color $red-light
+
+      &:active
+        color $red-darker
+
+    &.-violet
+      color $violet
+
+    &.-blue
+      color $blue-light
+
+    &.-green
+      color $green-light
+
+  .post-headline
+    font-family 'Josefin Sans'
+    font-weight 600
+    line-height 34px
+    font-size 26px
+    color $blue-dark
+    padding 2px 0 0
+    letter-spacing -1.5px
+    transition color .15s linear
+
+  .set-price
+    padding 9px 0
+    display flex
+    align-items center
+
+  .set-price-tag
+    color $grey-light
+    font-size 12px
+    font-weight 500
+    text-transform uppercase
+    margin-left 10px
+
+  .set-price-amount
+    background $violet
+    border-radius 4px
+    font-weight: 500;
+    font-size: 13px;
+    line-height 21px
+    text-align: center;
+    width 42px
+    box-sizing border-box
+    color $white
+    padding 2px 0 0
+
+  .post-date
+    color $grey-light
+    font-size 12px
+    font-weight 600
+    padding-top 2px
+
+  .post-excerpt
+    font-size 14px
+    line-height 23px
+    color $grey-light-medium
+    padding-top 4px
+
+  .post-partner
+    border-radius 4px
+    box-sizing border-box
+    border 1px solid $grey-lighter-medium
+    margin 24px 20px
+    padding 9px
+
+  .post-partner-wrapper
+    width 100%
+    position relative
+    overflow hidden
+
+    &:before
+      content ''
+      display block
+      padding-top 75%
+
+  .post-partner-image
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+    background-size cover
+    transition transform .25s ease-in-out
+
+    &:hover
+      transform scale(1.2)
+
+@media (max-width 1160px)
+  .posts-list
+    padding-bottom 68px
+
+    .post-item,
+    .post-partner
+      width calc(50% - 40px)
+      margin 24px 20px
+
+
+@media (max-width 620px)
+  .posts-list
+    padding-bottom 44px
+
+    &.-premium
+      .post-image-wrapper
+        &:before
+          padding-top 64%
+
+  .posts-list .post-image-wrapper:before
+    padding-top 72%
+
+  .posts-list
+    .post-excerpt
+      line-height 23px
+
+    .post-item,
+    .post-partner
+      width calc(100% - 40px)
+      margin 24px 20px

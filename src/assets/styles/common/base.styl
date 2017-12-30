@@ -1,0 +1,78 @@
+html
+  -webkit-text-size-adjust none
+  min-height 100%
+
+body
+  font-size 18px
+  line-height 1.8
+  background $grey-lightest
+
+*::selection
+  background $red
+  color $white
+
+body, input, textarea
+  font-family "Roboto"
+  font-size 14px
+  line-height 1.8
+
+*:focus
+  outline none
+
+.-popup-active
+  position relative
+  overflow hidden
+  width 100vw
+  height 100vh
+
+  // .wrapper
+  //   height 100vh
+
+// a:focus
+//   outline 1px solid #000
+
+#overlay
+  background rgba(0,0,0, 0.85)
+  position fixed
+  z-index 9990
+  top 0
+  left 0
+  width 100%
+  height 100%
+
+.-hide
+  display none
+
+.br
+  display block
+
+input[type="search"]
+  -webkit-appearance textfield
+
+input[type='submit']
+  -webkit-appearance none
+  -moz-appearance none
+  appearance none
+
+.-mobile
+  display none
+
+.-tablet
+  display none
+
+@media (max-width 992px)
+  .-tablet
+    display block
+
+  &.-tablet-hide
+    display none
+
+@media (max-width 620px)
+  .-mobile-hide
+    display none
+
+  .-mobile
+    display block
+
+  .-tablet
+    display block

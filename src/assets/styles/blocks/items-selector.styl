@@ -1,0 +1,177 @@
+.items-selector-large
+  border 1px solid $grey-lighter-medium
+  border-radius 4px
+  padding 25px 29px
+  margin-bottom 40px
+  box-sizing border-box
+
+  .headline
+    font-family 'Roboto'
+    color $grey-light
+    font-size 18px
+    line-height 28px
+    font-weight 500
+    letter-spacing 0
+    display flex
+    justify-content space-between
+    margin-bottom 13px
+
+    .headline-count
+      font-size 14px
+
+  .list
+    margin-bottom 16px
+
+  .compatibility-headline
+    margin-bottom 13px
+
+  .list-link
+    linkDefault()
+    color $blue-dark
+    display flex
+    justify-content space-between
+    font-size 14px
+    line-height 33px
+    font-weight 500
+    text-decoration none
+    text-transform uppercase
+
+    &:hover
+      text-decoration none
+
+      .list-link-count
+        color $red-hover
+
+  .list-link-count
+    color $grey-light
+    font-size 14px
+
+.items-selector
+  position relative
+  user-select none
+
+  &:hover,
+  &.-active
+    .result
+      background $grey-lightest-medium
+
+    .result-name
+      color $red-light
+
+  &.-active
+    .result
+      border-radius 4px 4px 0 0
+
+    .items-selector-dropdown
+      display block
+
+    .items-selector-handler
+      transform rotate(180deg)
+
+  .result
+    cursor pointer
+    border 1px solid $grey-lighter-medium
+    border-radius 4px
+    box-sizing border-box
+    padding 16px 30px 14px 28px
+    display flex
+    justify-content space-between
+    transition background .15s ease-in-out, color .15s ease-in-out
+
+  .result-name
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color $blue-dark
+
+  .items-selector-data
+    display flex
+    flex 0 0 76px
+    justify-content space-between
+    align-items center
+
+  .result-count
+    color $grey-light
+    font-size 18px
+    line-height 28px
+    font-weight 400
+    width 30px
+    text-align right
+
+  .items-selector-handler
+    width 26px
+    height 26px
+    background $grey-lightest-medium
+    border-radius 2px
+    display flex
+    justify-content center
+    align-items center
+
+  .items-selector-dropdown
+    position: absolute;
+    z-index 9
+    width: 100%;
+    box-sizing: border-box;
+    display none
+    border 1px solid $grey-lighter-medium
+    background $grey-lightest-medium
+    margin-top -1px
+    border-radius 0 0 4px 4px
+    padding 12px 0px 15px
+
+  .items-selector-item
+    position relative
+
+  .items-selector-item-link,
+  .items-selector-item-block
+    display flex
+    justify-content space-between
+    box-sizing border-box
+    padding 0px 18px 0px 28px
+    text-decoration none
+
+    &.-active
+      cursor default
+      color $grey-light
+
+      &:hover
+        color $grey-light
+
+        .items-selector-count
+          color $grey-light
+
+  .items-selector-item-link
+    linkDefault()
+    color $blue-dark
+
+    &:hover
+      text-decoration none
+
+      .items-selector-count
+        color $blue-dark
+
+  .items-selector-item-block
+    color $grey-light
+
+  .items-selector-item-text
+    display inline-block
+    font-size 14px
+    text-transform uppercase
+    line-height 39px
+    font-weight 500
+    text-decoration none
+
+  .items-selector-count
+    flex 0 0 30px
+    margin-right 58px
+    text-align right
+    color $grey-light
+    font-size 14px
+    line-height 39px
+    font-weight 500
+    transition color .15s ease-in-out
+
+@media (max-width 700px)
+  .items-selector .result
+    padding 16px 20px 14px 18px

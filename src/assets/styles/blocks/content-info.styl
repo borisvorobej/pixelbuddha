@@ -1,0 +1,111 @@
+.content-info
+  background $grey-lightest-main
+  border-radius 4px
+  padding 34px 32px 38px
+  margin-bottom 60px
+  box-sizing border-box
+  display flex
+  align-items flex-start
+
+.content-info-image-wrapper
+  flex 0 0 202px
+  margin-right 36px
+
+.content-info-image
+  width 100%
+
+.content-info-tags
+  margin 0 -15px
+  overflow hidden
+
+.content-info-tag
+  linkDefault()
+  position relative
+  font-size 14px
+  display inline-block
+  text-decoration none
+  font-weight 500
+  padding 3px 8px 3px 15px
+
+  &:before
+    content ''
+    display block
+    position absolute
+    left 0
+    top calc(50% - 2px)
+    width 3px
+    height 3px
+    background $red
+    border-radius 50%
+    transition background .15s ease-in-out
+
+  &:hover
+    &:before
+      background $red-light
+
+  &:first-child
+    &:before
+      display none
+
+  &.-grey
+    color $grey-light
+
+    &:before
+      background $grey-light
+
+    &:hover
+      color $grey
+
+      &:before
+        background $grey
+
+.content-info-headline
+  font-family 'Josefin Sans'
+  font-weight 600
+  line-height 42px
+  font-size 32px
+  color $blue-dark
+  padding 10px 0 8px
+  letter-spacing -1.75px
+  transition color .15s linear
+
+.content-info-text
+  font-size 15px
+  line-height 24px
+  color $grey-light-medium
+
+@media (max-width 1160px)
+  .content-info
+    padding 32px 32px 36px
+    
+  .content-info-image-wrapper
+    flex 0 0 185px
+
+  .content-info-headline
+    font-size 30px
+
+@media (max-width 992px)
+  .content-info
+    margin-bottom 44px
+
+@media (max-width 710px)
+  .content-info
+    margin-bottom 30px
+    display block
+    text-align center
+    background-color transparent
+    padding 0
+
+  .content-info-image-wrapper
+    display inline-block
+    width 62%
+    max-width 350px
+    margin 0
+
+  .content-info-text
+    display none
+
+  .content-info-headline
+    font-size 28px
+    line-height 36px
+    padding 6px 18px 0

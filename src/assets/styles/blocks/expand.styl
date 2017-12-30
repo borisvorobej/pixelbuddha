@@ -1,0 +1,104 @@
+.expand
+  &.-active
+    .expand-result
+      border-radius 4px 4px 0 0
+
+    .expand-dropdown
+      display block
+
+    .expand-controls-handler
+      transform rotate(180deg)
+
+
+  .expand-result
+    cursor pointer
+    border 1px solid $grey-lightest-main
+    background $grey-lightest-main
+    border-radius 4px 4px 0 0
+    box-sizing border-box
+    padding 13px 25px 10px 25px
+    display flex
+    justify-content space-between
+    align-items center
+    transition background .15s ease-in-out, color .15s ease-in-out
+
+    &:hover
+      .result-name
+        color $red
+
+  .result-name
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color $blue-dark
+
+  .expand-btn-buy
+    display block
+    color $white
+    font-weight 500
+    line-height 27px
+    font-size 18px
+    background $violet
+    transition background .15s ease-in-out
+    text-decoration none
+    width 100%
+    box-sizing border-box
+    padding 14px 26px
+    border-radius 0 0 4px 4px
+    display flex
+    justify-content space-between
+
+    &:hover
+      background $violet-hover
+
+    &:active
+      background $violet-active
+
+
+  .expand-btn-buy-price
+    display flex
+    align-items center
+
+    .expand-btn-buy-old-price
+      display none
+      font-size 14px
+      line-height 21px
+      font-weight 500
+      opacity .7
+      margin-right 12px
+      padding-top 1px
+      text-decoration line-through
+
+      &.-active
+        display block
+
+  .expand-dropdown
+    background $grey-lightest-main
+    border-top 1px solid $grey-lighter-medium
+    padding 12px 0
+    display none
+
+  .expand-link
+    linkDefault()
+    display inline-block
+    color $violet
+    font-weight: 500;
+    line-height: 27px;
+    font-size: 18px;
+    text-decoration none
+    padding 3px 25px
+    width 100%
+    box-sizing border-box
+    transition background .15s ease-in-out
+
+    &:hover
+      text-decoration none
+
+    &.-active
+      cursor default
+      font-weight 400
+      color $grey-light
+
+      &:active
+        transform translate(0, 0)

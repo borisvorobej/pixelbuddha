@@ -1,0 +1,24 @@
+{
+  "name": "uihead",
+  "version": "0.0.1",
+  "description": "uihead bower",
+  "main": "gulpfile.js",
+  "keywords": [
+    "frontend",
+    "uihead"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.4",
+    "select2": "select2/select2#~4.0.0",
+    "clipboard": "^1.5.16",
+    "masonry": "desandro/masonry#^4.1.1",
+    "growl": "ksylvest/jquery-growl#^1.3.2",
+    "imagesloaded": "^4.1.1"
+  }
+}

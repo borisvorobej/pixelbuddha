@@ -1,0 +1,296 @@
+.button-plus
+  display block
+  align-items center
+  justify-content center
+  width 14px
+  height 14px
+  background $violet
+  position relative
+  border-radius 2px
+  transition background .1s linear
+
+  &:before,
+  &:after
+    content ''
+    display block
+    background $white
+    position absolute
+    left 50%
+    top 50%
+    transform translate(-50%, -50%)
+
+  &:after
+    width 2px
+    height 6px
+
+  &:before
+    width 6px
+    height 2px
+
+  &:hover
+     background $violet-hover
+
+  &:active
+     background $violet-active
+
+  &.-large
+    width 24px
+    height 24px
+    border-radius 4px
+
+    &:before,
+    &:after
+      border-radius 10px
+
+    &:after
+      width 4px
+      height 12px
+
+    &:before
+      width 12px
+      height 4px
+
+.btn
+  display inline-block
+  border-width 0
+  border-radius 4px
+  text-decoration none
+  text-align center
+  box-sizing border-box
+  transition color .15s ease-in-out, border-color .15s ease-in-out, background .15s ease-in-out
+
+  &.-disabled,
+  &:disabled
+  &[disabled]
+    user-select none
+    cursor not-allowed
+
+    &:active
+      transform translate(0, 0)
+
+  &:active
+    transform translate(0, 1px)
+
+  &.-wide
+    width 100%
+
+  &.-social
+    position relative
+    padding 15px 24px 15px 42px
+    font-weight 500
+    line-height 32px
+    font-size 21px
+    text-align center
+    min-width 226px
+    box-sizing border-box
+
+    .btn-icon
+      position absolute
+      left 17px
+      top 50%
+      transform translate(0, -50%)
+      max-width 32px
+
+      &.-facebook
+        fill #3B5999
+
+  &.-small
+    font-size 14px
+    letter-spacing 0
+    line-height 16px
+    font-weight 500
+    padding 7px 19px
+
+  &.-default
+    font-size 14px
+    letter-spacing 0
+    line-height 16px
+    font-weight 500
+    padding 13px 28px 12px
+
+  &.-smallMedium
+    font-size 17px
+    line-height 26px
+    font-weight 500
+    padding 8px 38px 8px
+
+  &.-medium
+    font-size 18px
+    line-height 27px
+    font-weight 500
+    padding 13px 48px 14px
+
+  &.-mediumLarge
+    min-width 335px
+    font-size 20px
+    line-height 30px
+    font-weight 500
+    padding 15px 30px 13px
+    border-width 2px
+
+  &.-large
+    font-family 'Josefin Sans'
+    font-size 26px
+    letter-spacing -1.25px
+    line-height 34px
+    text-align center
+    padding 25px 48px 22px
+    border-width 2px
+
+  &.-grey
+    background $grey-lightest-main
+    border-style solid
+    border-color $grey-lightest-main
+    color $violet
+
+    &:hover,
+    &:active
+      border-color $violet
+
+    &:active
+      color $white
+      background-color $violet
+
+  &.-violet
+    color $white
+    background $violet
+
+    &:hover
+      background $violet-hover
+
+    &:active
+      background $violet-active
+
+    &[disabled]
+      background $violet
+      opacity .25
+
+  &.-red
+    color $white
+    background $red
+
+    &:hover
+      background $red-hover
+
+    &:active
+      background $red-active
+
+    &[disabled]
+      background $red
+      background $violet-disabled
+      opacity .25
+
+  &.-redCold
+    color $white
+    background $redCold
+
+    &:hover
+      background $redCold-hover
+
+    &:active
+      background $redCold-active
+
+    &[disabled]
+      background $redCold
+      opacity .25
+
+  &.-orange
+    color $white
+    background $orangeHot
+
+    &:hover
+      background $orangeHot-hover
+
+    &:active
+      background $orangeHot-active
+
+    &[disabled]
+      background $orangeHot
+      opacity .25
+
+  &.-blueDim
+    color $white
+    background $blueDim
+
+    &:hover
+      background $blueDim-hover
+
+    &:active
+      background $blueDim-active
+
+    &[disabled]
+      background $blueDim
+      opacity .25
+
+  &.-white
+    border 1px solid $grey-light
+    color $grey
+    background $white
+
+    &:hover
+      border-color $grey
+
+    &:active
+      border-color $grey
+      background $grey-lightest-medium
+
+    &[disabled]
+      border-color $grey-light
+      opacity .25
+
+.logo-default
+  .logo-text
+    fill $blue-dark
+
+  .logo-pic
+    fill $red
+
+.input-block
+  position relative
+
+  &:hover
+    .input
+      border-color $grey-light
+
+  .input
+    width 100%
+    padding 4px 24px 4px 12px
+    border 2px solid $grey-lighter
+    background $grey-lighter
+    border-radius 4px
+    font-size 16px
+    font-weight 500
+    color $grey-light-medium
+    transition border-color .15s ease-in-out
+
+    +placeholder()
+      color $grey-light-medium
+      font-size 16px
+      font-weight 500
+
+    &:focus
+      border-color $violet-border
+
+  .input-icon
+    position absolute
+    right 12px
+    top 50%
+    transform translate(0, -50%)
+    cursor pointer
+    opacity .17
+    transition opacity .15s ease-in-out
+
+    svg
+      fill #000
+
+    &:hover
+      opacity .25
+
+
+@media (max-width 620px)
+  .btn.-large
+    font-size 20px
+    letter-spacing 0
+    line-height 30px
+    padding 16px 48px 10px
+    font-weight 600

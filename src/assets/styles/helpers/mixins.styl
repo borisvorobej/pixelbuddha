@@ -1,0 +1,124 @@
+clearfix()
+    &:after
+        content ""
+        display table
+        clear both
+
+.clearfix
+  clearfix()
+
+ibreset()
+    border 0
+    padding 0
+    margin 0
+    outline none
+    background none
+
+user-select()
+    -webkit-user-select arguments
+    -moz-user-select arguments
+    user-select arguments
+
+// placeholder mixin
+// to use:
+// +placeholder()
+//     color #000
+//     opacity 1
+placeholder()
+    if selector() == "&"
+        error( "placeholder() must be called from a ruleset!" )
+    &::-webkit-input-placeholder
+        {block}
+    &:-moz-placeholder
+        {block}
+    &::-moz-placeholder
+        {block}
+    &:-ms-input-placeholder
+        {block}
+
+
+spriteWidth($sprite)
+    width ($sprite[4]/2)px
+
+spriteHeight($sprite)
+    height ($sprite[5]/2)px
+
+spritePosition($sprite)
+    background-position ($sprite[2]/2)px ($sprite[3]/2)px
+
+spriteImage($sprite)
+    background-image url(../images/design/$sprite[8])
+    background-size ($sprite[6]/2)px ($sprite[7]/2)px
+
+sprite($sprite)
+    if !match('hover', selector()) && !match('active', selector())
+        spriteImage($sprite)
+    spritePosition($sprite)
+    spriteWidth($sprite)
+    spriteHeight($sprite)
+
+size($size)
+  background-size $size[0] $size[1]
+  width $size[0]
+  height $size[1]
+
+scaleIcon()
+  &:before
+    -moz-transform scale(arguments)
+    -ms-transform scale(arguments)
+    -webkit-transform scale(arguments)
+    -o-transform scale(arguments)
+    transform scale(arguments)
+
+
+topAngle($color)
+  border-left 6px solid transparent
+  border-right 6px solid transparent
+  border-bottom 6px solid $color
+
+topAngleHidden()
+  display block
+  position absolute
+  opacity 0
+  z-index 2
+  bottom -1px
+  left calc(50% - 6px)
+  transform translate(0, 5px)
+  transition opacity .2s ease-in-out, transform .2s ease-in-out
+
+dropdownHidden()
+  position absolute
+  z-index 1
+  bottom 0
+  visibility hidden
+  opacity 0
+  transform translate(0, calc(100% + 5px))
+  transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+
+dropDownVisible()
+  visibility visible
+  opacity 1
+  transform translate(0, 100%)
+  transition-delay 0s, 0s, 0.2s
+
+dropdownStyle()
+  background $grey-lightest
+  box-shadow 0px 0px 15px $dark-15
+  box-sizing border-box
+  padding 30px 40px 25px
+
+
+linkDefault()
+  color $red
+  transition color .15s ease-in-out
+
+  &:hover,
+  &:active
+    text-decoration underline
+
+  &:hover
+    color $red-light
+
+  &:active
+    color $red-darker
+    transform translate(0, 1px)

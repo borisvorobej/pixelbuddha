@@ -1,0 +1,136 @@
+.content-wrapper
+  width 100%
+  display flex
+  flex-wrap wrap
+  margin 0 auto
+  padding 18px 0 0
+  box-sizing border-box
+
+  &.-content-right
+    flex-direction row-reverse
+
+    .content
+      padding-right 0
+      padding-left 60px
+
+.aside-headline
+  font-size 21px
+  line-height 29px
+  font-weight 500
+  text-align center
+  text-transform uppercase
+  padding 19px 0 24px
+
+.content
+  width calc(100% - 220px)
+  padding-right 60px
+  box-sizing border-box
+
+.content-aside
+  width 220px
+
+.section
+  padding 79px 0 100px
+
+.section-header
+  box-sizing border-box
+  padding 0 30px 44px
+  text-align center
+  max-width 850px
+  margin 0 auto
+
+.section-header-headline
+  font-family Josefin Sans
+  font-weight 600
+  font-size 48px
+  line-height 48px
+  letter-spacing -2px
+  padding-bottom 9px
+  text-transform uppercase
+
+.section-header-description
+  font-size 14px
+  color $grey-light-medium
+
+@media (max-width 1160px)
+  .section
+    padding 70px 0 100px
+
+  .section-header
+    padding-bottom 34px
+
+  .content-wrapper
+    padding-top 28px
+
+  .section-header-headline
+    font-size 38px
+    line-height 38px
+    letter-spacing -1.5px
+    padding-bottom 5px
+
+@media (max-width 992px)
+  .section
+    padding 60px 0 80px
+
+  .section-header
+    padding 0 0 51px
+
+  .section-header-headline
+    font-size 32px
+    line-height 32px
+    padding-bottom 9px
+
+  .content
+    width 100%
+    padding-right 0
+    padding-left 0
+
+  .content-wrapper
+    padding-top 0px
+
+    &.-content-right .content
+      padding-left 0
+
+  .content-aside
+    display none
+
+    &.-tablet-hide
+      display none
+
+@media (max-width 620px)
+  .section
+    padding 34px 0 0
+
+  .content
+    margin-bottom 62px
+
+  .content-wrapper
+    padding-top 0
+
+  .section-header
+    padding-bottom 20px
+
+  .section-header-headline
+    font-size 23px
+    line-height 32px
+    letter-spacing -1px
+    padding-bottom 11px
+
+  .section-header-description
+    padding-bottom 7px
+
+  .content-aside
+    width 100%
+    background $grey-darkest-deep
+    display block
+    margin 0 -20px 0
+    padding 60px 20px 18px
+
+    &.-tablet-hide
+      display none
+
+  .content-aside-wrapper
+    background $white
+    padding 18px 38px 38px
+    box-sizing border-box
+    border-radius 4px

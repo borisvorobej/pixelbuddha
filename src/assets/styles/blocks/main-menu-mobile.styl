@@ -1,0 +1,139 @@
+.main-menu-mobile,
+.main-menu-user-mobile
+  visibility hidden
+  position fixed
+  z-index 9
+  top 0
+  left 0
+  overflow hidden
+  width $main-menu-mobile-width
+  height 100%
+  box-sizing border-box
+  padding 27px 30px 20px 30px
+  background $grey-lightest
+  transform translate(-100%, 0)
+  transition transform .25s ease-in-out
+  will-change transform
+
+  &.-active
+    visibility visible
+    transform translate(0, 0)
+
+.main-menu-user-mobile
+  left auto
+  right 0
+  transform translate(100%, 0)
+  border-left 1px solid #F0F0F0
+
+  .user-menu-mobile-list
+    width calc(100% + 60px)
+    margin -28px -30px 0
+
+    .user-menu-mobile-item
+      position relative
+      box-sizing border-box
+
+      &.-username
+        border-bottom 1px solid #F0F0F0
+        margin-bottom 18px
+
+        .user-menu-mobile-link
+          height $headerHeight
+          color $grey-light-medium
+          box-sizing border-box
+          display flex
+          align-items center
+
+      .button-plus
+        position absolute
+        right 33px
+        top 50%
+        transform translate(0, -50%)
+
+    .user-menu-mobile-link
+      linkDefault()
+      padding 0 30px
+      display inline-block
+      width 100%
+      font-size 20px
+      font-weight 500
+      line-height 47px
+      color $blue-dark
+      text-decoration none
+
+      &.-logout
+        color $red-light-medium
+
+      &:hover,
+      &:active
+        text-decoration none
+
+.main-menu-mobile-wrapper
+  width 100%
+  height 100%
+  padding-right 40px
+  padding-bottom 30px
+  overflow-y scroll
+  overflow-x hidden
+
+.main-menu-mobile
+  border-right 1px solid #F0F0F0
+
+  .search
+    margin-bottom 30px
+
+  .menu-headline
+    font-weight 500
+    font-size 20px
+    color $blue-dark
+    padding-bottom 12px
+    letter-spacing -1.5px
+
+  .list-wrapper
+    width calc(100% + 20px)
+    overflow hidden
+    font-size 0
+    padding-bottom 19px
+
+    .list-small
+      width 50%
+      display inline-block
+      vertical-align top
+
+  .list-small
+    a
+      linkDefault()
+      display inline-block
+      color $grey-light-medium
+      font-size 14px
+      line-height 41px
+      font-weight 500
+      text-decoration none
+      text-transform uppercase
+
+  .list-large
+    a
+      linkDefault()
+      display inline-block
+      color $blue-dark
+      font-size 20px
+      line-height 47px
+      font-weight 500
+      text-decoration none
+
+      &:hover,
+      &:active
+        text-decoration none
+
+  .social-list
+    margin 26px -6px 0
+
+    svg
+      fill $grey-light-medium
+
+    .social-list-link
+      padding 0 7px 0 6px
+
+@media (max-width 620px)
+  .main-menu-mobile
+    display block
