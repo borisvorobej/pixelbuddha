@@ -139,6 +139,9 @@ body {
   line-height: 1.8;
   background: #fafafa;
 }
+body.-menu-opened {
+  overflow: hidden;
+}
 *::selection {
   background: #f14b11;
   color: #fff;
@@ -213,129 +216,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Poppins;
   font-weight: 600;
-}
-h1.headline {
-  font-size: 48px;
-  line-height: 60px;
-  letter-spacing: -2px;
-}
-h2.headline {
-  font-size: 36px;
-  line-height: 48px;
-  padding-bottom: 16px;
-  letter-spacing: -2px;
-}
-h3.headline {
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: -2px;
-}
-h4.headline {
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -2px;
-}
-.headline .icon {
-  margin-left: 12px;
-  position: relative;
-  top: 9px;
-}
-.headline-big {
-  font-family: 'Poppins';
-  font-size: 72px;
-  font-weight: 600;
-  letter-spacing: -4px;
-}
-.headline-description {
-  color: $gray-text;
-  font-size: 20px;
-  letter-spacing: -0.25;
-  line-height: 30px;
-  padding-bottom: 24px;
-}
-.headline-description.-small {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0;
-  padding-bottom: 14px;
-}
-.headline-description.-white {
-  color: #fff;
-}
-.sub-headline {
-  font-family: 'Poppins';
-  font-size: 16px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-.sub-headline.-top {
-  font-size: 20px;
-  color: rgba(0,0,0,0.5);
-  text-align: center;
-}
-.headline-author {
-  font-size: 16px;
-}
-.headline-author a {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  text-decoration: none;
-  border-bottom: 1px solid $black;
-  transition: color 0.15s;
-}
-.headline-author a:hover {
-  border-bottom: none;
-}
-@media (max-width: 1000px) {
-  h1.headline {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  h2.headline {
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -1px;
-    padding-bottom: 12px;
-  }
-  h3.headline {
-    font-size: 22px;
-    line-height: 28px;
-  }
-  h4.headline {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .headline-big {
-    font-size: 60px;
-    letter-spacing: -3.5px;
-  }
-}
-@media (max-width: 700px) {
-  h1.headline {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  h2.headline {
-    font-size: 24px;
-    line-height: 34px;
-    letter-spacing: -1px;
-    padding-bottom: 12px;
-  }
-  h3.headline {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  h4.headline {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .headline-big {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -2px;
-  }
 }
 .wrapper {
   width: 100%;

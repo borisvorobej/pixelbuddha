@@ -1,3 +1,5 @@
+var $body = $('body');
+
 // Disabled buttons handler
 $('[disabled]').on('click', function (e) {
 	e.preventDefault();
@@ -109,6 +111,7 @@ const mainMenuMobileOpen = function () {
 	$mainMenuMobile.addClass('-active');
 	$wrapper.addClass('-main-menu-mobile-active');
 	$mainFooter.addClass('-main-menu-mobile-active');
+	$body.addClass('-menu-opened');
 }
 
 const mainMenuMobileClose = function () {
@@ -116,6 +119,7 @@ const mainMenuMobileClose = function () {
 	$mainMenuMobile.removeClass('-active');
 	$wrapper.removeClass('-main-menu-mobile-active');
 	$mainFooter.removeClass('-main-menu-mobile-active');
+	$body.removeClass('-menu-opened');
 }
 
 const mainMenuUserMobileOpen = function () {
@@ -123,6 +127,7 @@ const mainMenuUserMobileOpen = function () {
 	$mainMenuUserMobile.addClass('-active');
 	$wrapper.addClass('-main-user-mobile-active');
 	$mainFooter.addClass('-main-user-mobile-active');
+	$body.addClass('-menu-opened');
 }
 
 const mainMenuUserMobileClose = function () {
@@ -130,6 +135,7 @@ const mainMenuUserMobileClose = function () {
 	$mainMenuUserMobile.removeClass('-active');
 	$wrapper.removeClass('-main-user-mobile-active');
 	$mainFooter.removeClass('-main-user-mobile-active');
+	$body.removeClass('-menu-opened');
 }
 
 $('.js-clear-input').on('click', function () {
