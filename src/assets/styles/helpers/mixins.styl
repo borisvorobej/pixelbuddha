@@ -93,7 +93,8 @@ dropdownHidden()
   visibility hidden
   opacity 0
   transform translate(0, calc(100% + 5px))
-  transition: all 0.2s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -ms-transform: translateY(100%) translateY(5px);
+  transition: transform 0.2s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s, opacity 0.2s ease-in-out 0s;
 
 dropDownVisible()
   visibility visible
@@ -113,10 +114,12 @@ linkDefault()
   transition color .15s ease-in-out
 
   &:hover,
-  &:active
+  &:active,
+  &:focus
     text-decoration underline
 
-  &:hover
+  &:hover,
+  &:focus
     color $red-light
 
   &:active

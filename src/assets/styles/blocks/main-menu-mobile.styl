@@ -1,28 +1,30 @@
 .main-menu-mobile,
 .main-menu-user-mobile
-  visibility hidden
-  position fixed
-  z-index 9
-  top 0
-  left 0
-  overflow hidden
-  width $main-menu-mobile-width
-  height 100%
+  // visibility hidden
+  // position fixed
+  // z-index 9
+  // top 0
+  // left 0
+  // overflow hidden
+  // // width calc(#{$main-menu-mobile-width} + 1px)
+  // width "calc(%s + 1px)" % $main-menu-mobile-width
+  // height 100%
   box-sizing border-box
   padding 27px 30px 20px 30px
   background $grey-lightest
-  transform translate(-100%, 0)
-  transition transform .25s ease-in-out
-  will-change transform
+  // // transform translate(-100%, 0)
+  // transition transform .25s ease-in-out
+  // will-change transform
 
-  &.-active
-    visibility visible
-    transform translate(0, 0)
+  // &.-active
+  //   visibility visible
+  //   z-index 10
+  //   transform translate(0, 0)
 
 .main-menu-user-mobile
-  left auto
-  right 0
-  transform translate(100%, 0)
+  // left auto
+  // right 0
+  // transform translate(100%, 0)
   border-left 1px solid #F0F0F0
 
   .user-menu-mobile-list

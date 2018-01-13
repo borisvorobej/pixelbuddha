@@ -1,0 +1,204 @@
+.freebie-images-wrapper
+  margin-bottom 43px
+
+  .freebie-image-main-wrapper
+    width 100%
+    padding-bottom 66.5%
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
+    margin-bottom 30px
+    border-radius 4px
+
+  .freebie-images-sub
+    display flex
+    flex-wrap wrap
+    margin -15px
+
+  .freebie-images-sub-item
+    flex 0 0 calc(50% - 30px)
+    padding-bottom 31.4%
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
+    margin 15px
+    border-radius 4px
+
+.freebie-download-button
+  width calc(100% - 58px)
+  margin 0 30px
+
+  &.btn.-medium
+    padding-left 12px
+    padding-right 12px
+
+.freebie-content-wrapper
+  display flex
+  flex-wrap wrap
+
+  .freebie-content-aside
+    flex 0 0 300px
+    margin-right 40px
+    padding-top 8px
+
+    .share-block
+      padding-top 31px
+      text-align center
+
+  .freebie-content
+    flex-grow 1
+
+  .freebie-download
+    padding 5px 0 0
+
+  .freebie-download-wrapper
+    border 1px solid $grey-lighter-medium
+    border-radius 4px
+    box-sizing border-box
+    padding 24px 0
+    text-align center
+
+  .freebie-download-description
+    font-size 14px
+    line-height 22px
+    font-weight 500
+    color $grey-light-medium
+    padding 15px 0 0
+
+  .freebie-download-link
+    display inline-block
+    width 100%
+    box-sizing border-box
+    text-align center
+    font-size 18px
+    line-height 28px
+    font-weight 500
+    color $red
+    text-decoration none
+    border-top 1px solid $grey-lighter-medium
+    margin-top 24px
+    padding-top 21px
+    transition color .15s ease-in-out
+
+    &:hover
+      color $red-light
+      text-decoration underline
+
+    &:active
+      color $red-darker
+      transform translate(0, 1px)
+
+.freebie-content-info
+  display flex
+  margin-bottom 18px
+
+.freebie-content-date
+  text-transform uppercase
+  font-size 14px
+  font-weight 500
+  color $grey-light
+
+.freebie-content-tags
+  margin-left 12px
+
+  .link
+    text-decoration none
+    padding 0 4px
+
+    &:hover
+      text-decoration underline
+
+.freebie-public
+  box-sizing border-box
+  padding-left 342px
+
+@media (max-width 1160px)
+  .freebie-images-wrapper
+    .freebie-image-main-wrapper
+      margin-bottom 20px
+
+    .freebie-images-sub
+      margin -11px
+
+    .freebie-images-sub-item
+      flex 0 0 calc(50% - 22px)
+      padding-bottom 31%
+      margin 11px
+
+  .freebie-content-wrapper
+    .freebie-content-aside
+      flex 0 0 200px
+      padding-top 6px
+      margin-right 39px
+
+    .freebie-download-wrapper
+      padding-top 15px
+      padding-bottom 13px
+
+    .freebie-download-link
+      margin-top 13px
+      padding-top 12px
+
+  // .freebie-content-date
+  //   text-transform none
+
+  .freebie-download-button
+    width calc(100% - 40px)
+    margin 0 20px
+
+  .freebie-content-info
+    margin-bottom 15px
+
+  .freebie-public
+    padding-left 0
+    margin-bottom 42px
+
+@media (max-width 992px)
+  .freebie-images-wrapper
+    .freebie-image-main-wrapper
+      padding-bottom 64.5%
+
+  .freebie-public
+    margin-bottom 22px
+
+@media (max-width 620px)
+  .freebie-images-wrapper
+    margin-bottom 34px
+
+    .freebie-image-main-wrapper
+      padding-bottom 66%
+
+    .freebie-images-sub-item
+      flex 0 0 100%
+      margin 10px 0
+      padding-bottom 66%
+
+    .freebie-images-sub
+      margin -10px 0
+
+  .freebie-content-wrapper
+    .freebie-content-aside,
+    .freebie-content
+      flex 0 0 100%
+      margin-right 0
+
+  .freebie-download-button
+    width calc(100% - 58px)
+
+  .freebie-content-wrapper
+    .freebie-download-wrapper
+      padding-top 26px
+      padding-bottom 21px
+
+    .freebie-download-link
+      margin-top 21px
+
+    .freebie-content-aside
+      margin-bottom 30px
+
+      .share-block
+        padding-top 40px
+        text-align left
+
+  .freebie-public
+    margin-bottom -10px

@@ -1,0 +1,175 @@
+.perview_slider
+  padding-bottom 43px
+
+  .slick-dots
+    text-align center
+    padding 34px 0 0
+
+    li
+      display inline-block
+      padding 0 5px
+
+      &.slick-active
+        button
+          background-color $red
+
+      button
+        display block !important
+        font-size 0
+        background-color $grey-lighter
+        border-radius 50%
+        width 10px
+        height 10px
+        border none
+        padding 0
+
+.perview_slider-big_picture
+  width 100%
+  height calc(100vh * 0.68)
+  background-size cover
+  background-position center center
+  overflow hidden
+  border-radius 4px
+
+.preview-images-slider
+  margin-top 30px
+
+  .slick-arrow
+    cursor pointer
+    position absolute
+    z-index 2
+    font-size 0
+    border none
+    sprite($s-arrow)
+    border-color $white
+    background-color $white
+    background-repeat no-repeat
+    background-position center
+    width 36px
+    height 100%
+    top 0
+    opacity .5
+    transition opacity .15s ease-in-out
+
+    &:hover
+      opacity 1
+
+  .slick-prev
+    left -30px
+    transform rotate(-180deg)
+
+  .slick-next
+    right -30px
+
+.preview-images-slider
+  width calc(100% + 25px)
+  height 90px
+  margin-left -14px
+  position relative
+
+  &:after,
+  &:before
+    content ''
+    width 30px
+    height 90px
+    position absolute
+    z-index 1
+    background $white
+    top 0
+
+  &:after
+    right -21px
+
+  &:before
+    left -16px
+
+.preview-images-item
+  display inline-block
+  margin 0 14px 0 14px
+  cursor pointer
+  // width 136px
+  height 90px
+  background-position center center
+  background-size cover
+  border-radius 4px
+  position relative
+  overflow hidden
+  z-index 1
+  transition opacity .15s ease-in-out
+
+  &:before
+    cursor pointer
+    content ''
+    display block
+    position absolute
+    width 100%
+    height 100%
+    top 0
+    left 0
+    background $black
+    opacity 0
+    transition opacity .15s ease-in-out, background .15s ease-in-out
+
+  &.-current
+    opacity .4
+
+    &:before
+      display none
+
+  &:hover
+    &:before
+      opacity .2
+
+  &:active
+    &:before
+      opacity .05
+
+@media (max-width 1160px)
+  .preview-images-item
+    height 80px
+    margin 0 8px
+
+  .preview-images-slider
+    height 80px
+    margin-top 0
+
+    .slick-next,
+    .slick-prev
+      width 30px
+
+    .slick-next
+      right -22px
+
+    .slick-prev
+      left -18px
+
+  .perview_slider-big_picture
+    height calc(100vh * 0.57)
+
+@media (max-width 620px)
+  .perview_slider-big_picture
+    display none
+
+  .preview-images-item
+    height 224px
+    margin 0 8px
+
+    &:before
+      display none
+
+    &.-current
+      opacity 1
+
+  .preview-images-slider
+    height 224px
+
+    &:before,
+    &:after
+      display none
+
+    .slick-next,
+    .slick-prev
+      display none !important
+
+  .perview_slider
+    padding 0 4px 75px

@@ -1,0 +1,247 @@
+.single-content-wrapper
+  clearfix()
+
+.single-content-aside
+  display none
+
+.single-disqus
+  padding-top 60px
+
+.share-block
+  padding-top 50px
+
+  &.-publications
+    padding-top 26px
+
+.product-info
+  border 1px solid $grey-lighter-medium
+  border-radius 4px
+  box-sizing border-box
+  padding 30px
+
+  .headline
+    font-weight 500
+    line-height 28px
+    font-size 18px
+    padding-bottom 16px
+
+  .product-info-description
+    line-height 25px
+    font-size 16px
+    color $grey-light-medium
+    padding-bottom 21px
+
+  .product-info-compatibility
+    padding-bottom 30px
+
+  .product-info-features
+    padding-bottom 40px
+
+  .product-info-features-list
+    margin-top -10px
+
+    .product-info-features-item
+      display flex
+      justify-content space-between
+      line-height 30px
+      font-size 16px
+      position relative
+      overflow hidden
+
+      &:before
+        content '......................................................';
+        font-size 14px
+        color $grey-light-medium
+        letter-spacing 1px
+        position absolute
+        bottom 0
+        left 0
+
+    .product-info-features-name,
+    .product-info-features-value,
+    .product-info-features-link
+      background $white
+      position relative
+      z-index 1
+      color $grey-light-medium
+      line-height 30px
+      font-size 16px
+
+    .product-info-features-name
+      padding-right 5px
+
+    .product-info-features-value,
+    .product-info-features-link
+      padding-left 6px
+
+    .product-info-features-link
+      linkDefault()
+      color $blue-dark
+      font-weight 500
+      text-decoration none
+
+  .product-info-footer
+    box-sizing border-box
+    margin 40px -30px 0
+    width calc(100% + 60px)
+    border-top 1px solid $grey-lighter-medium
+    text-align center
+    box-sizing border-box
+    padding 30px 30px 0
+    line-height: 25px;
+    font-size: 16px;
+    color $grey-light-medium
+
+    p
+      padding-bottom 8px
+
+    a
+      linkDefault()
+      text-decoration none
+      font-weight 500
+      line-height: 28px;
+      font-size: 18px;
+
+@media (max-width 1160px)
+  .product-info
+    padding 26px 22px 32px
+
+    .product-info-description
+      line-height 21px
+      font-size 14px
+      padding-bottom 18px
+
+    .headline
+      line-height 25px
+      font-size 16px
+      padding-bottom 13px
+
+    .product-info-compatibility
+      padding-bottom 23px
+
+    .product-info-features
+      padding-bottom 32px
+
+    .product-info-features-list
+      margin-top -4px
+
+      .product-info-features-name,
+      .product-info-features-value,
+      .product-info-features-link
+        font-size 14px
+        line-height 26px
+
+    .product-info-footer
+      width calc(100% + 44px)
+      padding 31px 20px 0
+      font-size 14px
+      line-height 22px
+      margin 35px -22px 0
+
+      p
+        padding-bottom 5px
+
+      a
+        font-size 16px
+        line-height 25px
+
+  .share-block
+    padding-top 40px
+
+    &.-publications
+      padding-top 22px
+
+  .single-disqus
+    padding-top 42px
+
+@media (max-width 992px)
+  .single-content-main
+    float left
+    width calc(100% - 270px)
+    box-sizing border-box
+    padding-right 50px
+
+  .single-content-aside
+    display block
+    float right
+    width 270px
+
+  .product-info
+    padding 23px 27px 32px
+
+    .product-info-footer
+      margin 40px -28px 0
+      padding 31px 20px 0
+      width calc(100% + 56px)
+
+  .single-disqus
+    padding-top 27px
+
+    &.-publications
+      padding-top 42px
+
+
+@media (max-width 620px)
+  .single-content-main
+    float none
+    width 100%
+    padding-right 0
+
+  .single-content-aside
+    float none
+    width 100%
+
+  .share-block
+    display flex
+    justify-content center
+
+  .single-content-aside
+    margin-top 29px
+
+  .product-info
+    padding 28px
+
+    .headline
+      font-size 18px
+      line-height 28px
+      padding-bottom 16px
+
+    .product-info-description
+      font-size 16px
+      line-height 26px
+      padding-bottom 21px
+
+    .product-info-compatibility
+      padding-bottom 29px
+
+    .product-info-features-list
+      margin-top -9px
+
+      .product-info-features-name,
+      .product-info-features-value,
+      .product-info-features-link
+        font-size 16px
+        line-height 30px
+
+    .product-info-features
+      padding-bottom 40px
+
+    .product-info-footer
+      padding 31px 40px 0
+      line-height 24px
+
+      p
+        padding-bottom 10px
+
+      a
+        font-size: 18px;
+        line-height: 28px;
+
+  .share-block
+    padding-top 50px
+
+    &.-publications
+      justify-content flex-start
+
+  .single-disqus
+    padding-top 34px

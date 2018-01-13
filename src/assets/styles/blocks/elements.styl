@@ -1,3 +1,45 @@
+.link
+  linkDefault()
+  display inline-block
+  text-decoration none
+
+  &:hover
+    text-decoration underline
+
+  &.-bold
+    font-weight 500
+
+  &.-red
+    color $red
+
+    &:hover
+      color $red-light
+
+    &:active
+      color $red-darker
+
+  &.-violet
+    color $violet
+
+    &:hover
+      color $violet-hover
+
+    &:active
+      color $violet-active
+
+  &.-blue
+    color $blue-dark
+
+    &:hover
+      color $red-light
+
+    &:active
+      color $red-darker
+
+.text-element
+  &.-red
+    color $red
+
 .button-plus
   display block
   align-items center
@@ -57,6 +99,7 @@
   text-decoration none
   text-align center
   box-sizing border-box
+  cursor pointer
   transition color .15s ease-in-out, border-color .15s ease-in-out, background .15s ease-in-out
 
   &.-disabled,
@@ -128,6 +171,14 @@
     padding 15px 30px 13px
     border-width 2px
 
+  &.-aboveMediumLarge
+    min-width 226px
+    font-size 20px
+    line-height 30px
+    font-weight 500
+    padding 18px 30px 17px
+    border-width 2px
+
   &.-large
     font-family 'Josefin Sans'
     font-size 26px
@@ -166,6 +217,7 @@
       opacity .25
 
   &.-red
+    border none
     color $white
     background $red
 
@@ -238,7 +290,44 @@
       border-color $grey-light
       opacity .25
 
+  &.-twiter
+    color $white
+    background #1DA1F2
+
+    &:hover,
+    &:active
+      background #11a5ff
+
+    &[disabled]
+      opacity .25
+
+  &.-facebook
+    color $white
+    background #3C5B96
+
+    &:hover,
+    &:active
+      background #41619c
+
+    &[disabled]
+      opacity .25
+
+  &.-pinterest
+    color $white
+    background #C7252D
+
+    &:hover,
+    &:active
+      background #d4222b
+
+    &[disabled]
+      opacity .25
+
 .logo-default
+  &.-large
+    svg
+      width 280px
+
   .logo-text
     fill $blue-dark
 
@@ -261,6 +350,7 @@
     font-size 16px
     font-weight 500
     color $grey-light-medium
+    -webkit-appearance none
     transition border-color .15s ease-in-out
 
     +placeholder()
@@ -294,3 +384,12 @@
     line-height 30px
     padding 16px 48px 10px
     font-weight 600
+
+  .btn.-aboveMediumLarge
+    font-size 19px
+    padding 14px 30px 14px
+    letter-spacing -.75px
+
+  .btn.-social
+    padding 15px 24px 15px 42px
+    letter-spacing -1px

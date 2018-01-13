@@ -49,15 +49,13 @@
 
   &.-grey
     color $grey-light
+    text-decoration none
 
     &:before
       background $grey-light
 
-    &:hover
-      color $grey
-
-      &:before
-        background $grey
+    &:active
+      transform translate(0, 0)
 
 .content-info-headline
   font-family 'Josefin Sans'
@@ -77,7 +75,7 @@
 @media (max-width 1160px)
   .content-info
     padding 32px 32px 36px
-    
+
   .content-info-image-wrapper
     flex 0 0 185px
 

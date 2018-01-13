@@ -1,8 +1,11 @@
 .wrapper
+  position relative
+  z-index 11
   width 100%
   flex 1 0 auto
   background $white
   transform translate(0, 0)
+  padding-top 80px
   transition transform .25s ease-in-out
 
   &.-main-menu-mobile-active
@@ -18,14 +21,26 @@
   margin 0 auto
   box-sizing border-box
 
+@media (max-width 1160px)
+  .base-col.-large
+    padding 0 60px
+
 @media (max-width 1100px)
-  .base-col
+  .base-col,
+  .base-col.-large
     padding 0 36px
 
 @media (max-width 992px)
   .base-col
     padding 0 44px
 
+  .base-col.-large
+    padding 0 40px
+
 @media (max-width 620px)
-  .base-col
+  .base-col,
+  .base-col.-large
     padding 0 20px
+
+  .wrapper
+    width 100vw

@@ -1,0 +1,200 @@
+.related-products
+  background $grey-lightest-main
+  padding 58px 0 72px
+  margin-top -8px
+
+  &.-desktop
+    display block
+
+.related-products-headline
+  font-weight: 500;
+  line-height: 47px;
+  font-size: 30px;
+  color $black
+  padding-bottom 26px
+
+.related-products-list
+  font-size 0
+  margin -8px -18px
+
+  &.-articles
+    margin-top 3px
+
+    .related-products-image-wrapper:before
+      padding-top 74%
+
+.related-products-item
+  cursor pointer
+  display inline-block
+  vertical-align top
+  width calc(25% - 40px)
+  margin 8px 20px
+  position relative
+
+  &:hover
+    .related-products-image
+      transform scale(1.2)
+
+    .related-products-item-name
+      color $red
+
+.related-products-date
+  font-weight 500
+  font-size 12px
+  text-transform uppercase
+  color $grey-light
+  margin-bottom 4px
+
+.related-products-link
+  position absolute
+  z-index 2
+  width 100%
+  height 100%
+  top 0
+  left 0
+  cursor pointer
+
+.related-products-image-wrapper
+  width: 100%;
+  position: relative;
+  margin-bottom: 21px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &:before
+    content: '';
+    display: block;
+    padding-top: 66%;
+
+.related-products-image
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  transition: transform 0.25s ease-in-out;
+
+  &:hover
+    transform: scale(1.2)
+
+.related-products-item-headline
+  display flex
+  align-items flex-start
+
+.related-products-item-price
+  background #7c78b5
+  border-radius 4px
+  font-weight 500
+  font-size 13px
+  line-height 21px
+  text-align center
+  width 42px
+  box-sizing border-box
+  color #fff
+  padding 1px 0
+  margin-top 0
+  margin-right 2px
+
+.related-products-item-name
+  flex-grow 1
+  font-size 18px
+  line-height 25px
+  font-weight 500
+  color $blue-dark
+  transition color .15s ease-in-out
+
+@media (max-width 1160px)
+  .related-products
+    margin-top -50px
+    padding 50px 0 73px
+
+  .related-products-list.-articles
+    margin-top -8px
+
+  .related-products-headline
+    font-size 24px
+    line-height 38px
+    padding-bottom 29px
+
+  .related-products-item
+    width calc(33.33% - 30px)
+    margin 8px 15px
+
+    &:last-child
+      display none
+
+  .related-products-image-wrapper
+    margin-bottom 18px
+
+    &:before
+      padding-top 67%
+
+  .related-products-item-price
+    margin-top 2px
+
+@media (max-width 992px)
+  .related-products
+    margin-top -53px
+    padding 45px 0 72px
+
+  .related-products-headline
+    font-size 28px
+    line-height 44px
+    padding-bottom 33px
+
+  .related-products-list,
+  .related-products-list.-articles
+    margin -17px -20px
+
+  .related-products-item
+    width calc(50% - 40px)
+    margin 17px 20px
+
+    &:last-child
+      display inline-block
+
+  .related-products-item-name
+    line-height 25px
+
+@media (max-width 620px)
+
+  .content-wrapper.-publication .related-products.-mobile
+    margin 40px -32px 0
+
+  .related-products-list.-articles .related-products-image-wrapper:before
+    padding-top 66%
+
+  .related-products-headline
+    text-align center
+    padding-bottom 37px
+
+  .related-products-list
+    margin -20px 18px
+
+    &.-articles
+      margin -20px 0
+
+  .related-products-item
+    width calc(100% - 34px)
+    margin 20px 18px
+
+  .related-products
+    margin-top -11px
+    padding 49px 0 72px
+
+    &.-articles
+      padding 46px 0 62px
+
+      .related-products-headline
+        padding-bottom 34px
+
+      .related-products-image-wrapper
+        margin-bottom 21px
+
+    &.-desktop
+      display none
+
+    &.-mobile
+      margin 40px -20px 0

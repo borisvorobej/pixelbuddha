@@ -1,0 +1,156 @@
+.sharing-main
+  background $grey-lightest-medium
+  border-radius 4px
+  text-align center
+  padding 58px 58px 97px
+  margin-top 18px
+  margin-bottom 60px
+
+.sharing-headline
+  font-size 36px
+  line-height 57px
+  color $violet-dark
+
+  .sharing-headline-icon
+    fill $violet-dark
+    position: relative;
+    top: 4px;
+    left: -18px;
+
+.sharing-description
+  margin 0 auto
+  width 100%
+  max-width 680px
+  font-size 16px
+  line-height 28px
+  color $grey
+  margin-top 25px
+
+.sharing-post
+  background $white
+  box-shadow 6px 6px 20px rgba(0, 0, 0, 0.12)
+  border-radius 4px
+  padding 40px
+  display flex
+  box-sizing border-box
+  width 100%
+  max-width 680px
+  margin 44px auto 0
+
+  .sharing-post-image-wrapper
+    flex 0 0 160px
+    height 120px
+    margin-right 31px
+    overflow hidden
+    border-radius 4px
+    position relative
+    z-index 1
+
+    .sharing-post-image
+      width 100%
+      position absolute
+      top 50%
+      left 50%
+      transition transform .2s ease-in-out
+      transform translate(-50%, -50%)
+
+      &:hover
+        transform translate(-50%, -50%) scale(1.2)
+
+  .sharing-post-content
+    margin-top -4px
+    font-size 18px
+    line-height 28px
+    color $black
+    text-align left
+
+
+.sharing-buttons
+  margin 50px 0 0
+
+  .btn
+    width 134px
+    text-align center
+    padding-left 0
+    padding-right 0
+    margin 0 14px
+
+@media (max-width 1160px)
+  .sharing-main
+    margin-bottom 48px
+
+@media (max-width 992px)
+  .sharing-main
+    margin-top -4px
+    margin-bottom 76px
+    padding 46px 40px 86px
+
+  .sharing-headline
+    font-size 30px
+    line-height 47px
+
+    .sharing-headline-icon
+      display block
+      margin 0 auto 22px
+      left 0
+
+  .sharing-description
+    margin-top 12px
+    max-width 540px
+
+  .sharing-post
+    margin-top 42px
+
+  .sharing-post
+    .sharing-post-content
+      font-size 16px
+      line-height 25px
+
+@media (max-width 992px)
+  .sharing-main
+    margin-top 20px
+    margin-left -20px
+    margin-right -20px
+    border-radius 0
+    padding 46px 20px 60px
+    margin-bottom 48px
+
+  .sharing-headline
+    font-size 26px
+    line-height 41px
+
+    .sharing-headline-icon
+      margin 0 auto 26px
+
+  .sharing-description
+    margin-top 15px
+
+  .sharing-post
+    display block
+    padding 30px 28px
+    margin-top 40px
+    border-radius 4px 4px 0 0
+
+  .sharing-post-image-wrapper
+    width 160px
+    height 120px
+    margin-bottom 28px
+
+  .sharing-post-content
+    font-size 15px
+    line-height 24px
+
+    .link
+      display inline
+      word-wrap break-word
+
+  .sharing-buttons
+    margin-top -1px
+    font-size 0
+    overflow hidden
+    border-radius 0 0 4px 4px
+
+    .btn
+      width 33.33%
+      margin 0
+      border-radius 0

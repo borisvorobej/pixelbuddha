@@ -1,0 +1,93 @@
+.fonts-preview
+  margin-top 60px
+  margin-bottom 52px
+
+.fonts-preview-form
+  background #EFEFEF
+  padding 20px
+  border-radius 4px
+
+.fonts-preview-input-wrapper
+  position relative
+
+.fonts-preview-input
+  background $white
+  border 1px solid $grey-lighter-border
+  border-radius 4px
+  font-size 14px
+  line-height 22px
+  width 100%
+  padding 13px 300px 12px 19px
+  transition border-color .15s ease-in-Out
+
+  &:hover
+    border-color $grey-light
+
+  &:focus
+    border-color $violet-border
+    padding 13px 18px 12px 19px
+
+    & + .fonts-preview-input-description
+      visibility hidden
+      opacity 0
+      transition-delay 0s, 0.15s
+
+.fonts-preview-input-description
+  font-size 14px
+  line-height 22px
+  color $grey-light
+  position absolute
+  top 50%
+  right 20px
+  transform translate(0, -50%)
+  // transition opacity .15s ease-in-out, visibility 0s linear .15s
+
+.fonts-preview-results
+  margin-top 0
+
+.fonts-preview-result-item
+  position relative
+  padding 30px 180px 30px 0
+  border-bottom 1px solid #EFEFEF
+  font-size 36px
+  line-height 52px
+  color $grey
+
+.fonts-preview-result-text
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+.fonts-preview-result-font
+  position absolute
+  right 0
+  top 50%
+  transform translate(0, -50%)
+  background #EFEFEF
+  border-radius 4px
+  font-size 14px
+  line-height 22px
+  color $grey
+  padding 7px 10px 5px
+
+@media (max-width 1160px)
+  .fonts-preview
+    margin-top 52px
+    margin-bottom 45px
+
+@media (max-width 620px)
+  .fonts-preview-input
+    padding 13px 12px 12px 19px
+
+    &:focus
+      padding 13px 12px 12px 19px
+
+  .fonts-preview-input-description
+    display none
+
+  .fonts-preview-result-item
+    font-size 20px
+    line-height 24px
+
+  .fonts-preview-result-item
+    margin 0 0 36px

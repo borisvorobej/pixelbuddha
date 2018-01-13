@@ -6,12 +6,23 @@
   padding 18px 0 0
   box-sizing border-box
 
+  &.-publication
+    padding-left 82px
+    padding-right 80px
+
   &.-content-right
     flex-direction row-reverse
 
     .content
       padding-right 0
       padding-left 60px
+
+  &.-large
+    .content
+      width calc(100% - 320px)
+
+    .content-aside
+      width 320px
 
 .aside-headline
   font-size 21px
@@ -20,33 +31,58 @@
   text-align center
   text-transform uppercase
   padding 19px 0 24px
+  letter-spacing .5px
 
 .content
   width calc(100% - 220px)
   padding-right 60px
   box-sizing border-box
 
+  &.-full-small
+    width 100%
+    max-width 1040px
+    padding-right 0
+    margin 4px auto 0
+
 .content-aside
   width 220px
 
 .section
-  padding 79px 0 100px
+  padding 74px 0 100px
 
 .section-header
   box-sizing border-box
   padding 0 30px 44px
   text-align center
-  max-width 850px
+  max-width 940px
   margin 0 auto
 
-.section-header-headline
+  &.-no-description
+    padding-bottom 40px
+
+  .content-info-tags
+    margin -19px 0 24px
+
+h1.section-header-headline,
+h2.section-header-headline,
   font-family Josefin Sans
-  font-weight 600
+  font-weight 500
+
+  & + .section-header-description
+    padding-top 9px
+
+h1.section-header-headline
   font-size 48px
-  line-height 48px
-  letter-spacing -2px
-  padding-bottom 9px
+  line-height 54px
+  letter-spacing 1px
   text-transform uppercase
+
+h2.section-header-headline
+  font-size 36px
+  line-height 45px
+  letter-spacing 0
+  text-transform none
+  font-weight 500
 
 .section-header-description
   font-size 14px
@@ -54,19 +90,53 @@
 
 @media (max-width 1160px)
   .section
-    padding 70px 0 100px
+    padding 60px 0 100px
+
+  .content
+    &.-full-small
+      max-width 680px
 
   .section-header
     padding-bottom 34px
 
+    &.-sub
+      padding-bottom 44px
+
+    &.-no-description
+      padding-bottom 18px
+
+    .content-info-tags
+      margin-bottom 14px
+
   .content-wrapper
     padding-top 28px
 
-  .section-header-headline
+    &.-large
+      .content
+        width calc(100% - 260px)
+        padding-right 40px
+
+      .content-aside
+        width 260px
+
+    &.-publication
+      padding-top 18px
+      padding-left 40px
+      padding-right 40px
+
+  h1.section-header-headline,
+  h2.section-header-headline
     font-size 38px
-    line-height 38px
-    letter-spacing -1.5px
+    line-height 48px
+    letter-spacing 1.5px
     padding-bottom 5px
+
+    & + .section-header-description
+      padding-top 2px
+
+  h2.section-header-headline
+    font-size 36px
+    letter-spacing 0
 
 @media (max-width 992px)
   .section
@@ -75,10 +145,21 @@
   .section-header
     padding 0 0 51px
 
-  .section-header-headline
+    &.-sub
+      padding-bottom 38px
+
+    &.-no-description
+      padding-bottom 25px
+
+  h1.section-header-headline
     font-size 32px
     line-height 32px
     padding-bottom 9px
+
+  h2.section-header-headline
+    font-size 36px
+    line-height 32px
+    padding-bottom 12px
 
   .content
     width 100%
@@ -90,6 +171,15 @@
 
     &.-content-right .content
       padding-left 0
+
+    &.-large
+      .content
+        width 100%
+        padding-right 0
+        padding-left 0
+
+    &.-publication
+      padding 5px 10px 0 4px
 
   .content-aside
     display none
@@ -104,17 +194,54 @@
   .content
     margin-bottom 62px
 
+    &.-freebie
+      margin-bottom 0
+
+    &.-full-small
+      margin-bottom 60px
+
   .content-wrapper
     padding-top 0
+
+    &.-publication
+      padding 5px 0 0
+
+      .content
+        padding 0 12px 0 13px
+        margin-bottom 0
 
   .section-header
     padding-bottom 20px
 
-  .section-header-headline
+    &.-sub
+      padding-bottom 23px
+
+    &.-large-mobile-indention
+      padding-top 12px
+
+      h1.section-header-headline
+        padding-bottom 2px
+
+    &.-no-description
+      padding-bottom 16px
+
+    .content-info-tags
+      margin-top -4px
+      margin-bottom 8px
+
+  span.content-info-tag
+    display none
+
+  h1.section-header-headline,
+  h2.section-header-headline
     font-size 23px
     line-height 32px
-    letter-spacing -1px
+    letter-spacing .75px
     padding-bottom 11px
+
+  h2.section-header-headline
+    letter-spacing -.25px
+    padding-bottom 2px
 
   .section-header-description
     padding-bottom 7px
@@ -124,7 +251,7 @@
     background $grey-darkest-deep
     display block
     margin 0 -20px 0
-    padding 60px 20px 18px
+    padding 60px 20px 11px
 
     &.-tablet-hide
       display none

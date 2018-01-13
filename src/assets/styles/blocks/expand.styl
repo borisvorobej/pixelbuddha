@@ -32,6 +32,7 @@
     font-size: 18px;
     text-transform: capitalize;
     color $blue-dark
+    user-select none
 
   .expand-btn-buy
     display block
@@ -102,3 +103,31 @@
 
       &:active
         transform translate(0, 0)
+
+@media (max-width 1160px)
+  .expand
+    .expand-result
+      padding 11px 18px 9px 19px
+
+    .result-name
+      font-size 16px
+      line-height 24px
+
+    .expand-btn-buy
+      padding 12px 20px 10px
+      line-height 24px
+      font-size 16px
+
+@media (max-width 620px)
+  .expand
+    .result-name
+      font-size 18px
+      line-height 27px
+
+    .expand-result
+      padding 13px 27px 11px 23px
+
+    .expand-btn-buy
+      font-size 18px
+      line-height 27px
+      padding 15px 24px 12px

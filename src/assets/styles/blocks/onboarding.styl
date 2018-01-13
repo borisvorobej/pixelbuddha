@@ -1,0 +1,290 @@
+.onboarding
+  display flex
+  min-height 100%
+
+.onboarding-left
+  flex 0 0 50%
+  box-sizing border-box
+
+  .logo-default
+    margin-left -10px
+
+.onboarding-left-wrapper
+  position relative
+  display flex
+  flex-wrap wrap
+  flex-direction column
+  min-height 100%
+  box-sizing border-box
+  padding 90px 140px
+
+.onboarding-right
+  flex 0 0 50%
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  background $grey-lightest-main
+
+.onboarding-main-image
+  width 100%
+  max-width 504px
+  margin-bottom 60px
+
+.onboarding-main-description
+  font-size 16px
+  line-height 25px
+  text-align center
+  color #8A8EA7
+  max-width 340px
+  width 100%
+
+.onboarding-form
+  border-bottom 1px solid $grey-lighter-medium
+  margin-top 76px
+  padding-bottom 40px
+
+  .input-wrapper
+    width 100%
+    margin-bottom 15px
+
+.onboarding-headline
+  font-size 21px
+  line-height 33px
+  color $grey
+  padding-bottom 7px
+
+.onboarding-form-description
+  font-size 16px
+  line-height 28px
+  color $grey-light-medium
+  padding-bottom 30px
+
+.onboarding-form-controls
+  display flex
+  align-items center
+
+  .btn
+    margin-right 28px
+
+  .btn,
+  .onboarding-form-controls-link
+    flex 0 0 calc(50% - 16px)
+
+  .onboarding-form-controls-link
+    linkDefault()
+    display inline-block
+    text-align center
+    font-size 21px
+    line-height 32px
+    color $blue-dark
+    text-decoration none
+    font-weight 500
+
+    &.-forgot
+      font-size 15px
+      line-height 28px
+      color $grey-light-medium
+      font-weight 400
+      text-decoration underline
+      letter-spacing 0
+
+      &:hover
+        color $red
+
+      &:active
+        color $red-darker
+
+.onboarding-policy
+  color $grey-light-medium
+  font-size 16px
+  line-height 28px
+  padding-bottom 30px
+
+.onboarding-copyrights
+  color $grey-light
+  font-size 14px
+  line-height 22px
+  position absolute
+  bottom 30px
+  margin-left 10px
+
+.social-login
+  display flex
+  flex-wrap wrap
+  margin 42px 0 37px
+
+  .btn
+    flex 0 0 calc(50% - 14px)
+    min-width 0
+
+    &:first-child
+      margin-right 28px
+
+.recover
+  background $white
+  width 100%
+  min-height 100%
+  padding 90px 0
+  box-sizing border-box
+
+  .recover-form
+    width 100%
+    max-width 480px
+    margin 95px auto 0
+    padding-bottom 90px
+
+  .logo-default
+    display block
+    text-align center
+    width 100%
+
+  .onboarding-headline,
+  .onboarding-form-description
+    text-align center
+
+  .input-wrapper
+    width 100%
+
+  .onboarding-copyrights
+    margin-left 0
+    left 50%
+    bottom 90px
+    transform translate(-50%, 0)
+
+  .onboarding-form-controls
+    margin-top 15px
+
+    .btn
+      flex 0 0 50%
+
+@media (max-width 1400px)
+  .onboarding-left-wrapper
+    padding 90px 90px
+
+@media (max-width 1280px)
+  .onboarding-left-wrapper
+    padding 90px 80px
+
+  .onboarding-form-controls
+
+    .btn
+      flex 0 0 200px
+      min-width 0
+
+    .onboarding-form-controls-link
+      flex 1 1 calc(100% - 200px)
+      font-size 19px
+
+  .onboarding-main-image
+    margin-bottom 48px
+
+@media (max-width 1100px)
+  .onboarding-left
+    flex 0 0 100%
+
+  .onboarding-right
+    display none
+
+  .onboarding-left-wrapper
+    max-width 488px
+    margin 0 auto
+    padding 90px 0
+
+  .onboarding-form-controls
+    .btn
+      flex 0 0 225px
+
+  .onboarding-copyrights
+    margin-left 0
+
+@media (max-width 620px)
+  .logo-default.-large svg
+    width 236px
+
+  .onboarding-left-wrapper
+    padding 48px 32px
+
+    .logo-default
+      margin 0 auto
+      width 38px
+      overflow hidden
+
+      .logo-text
+        display none
+
+  .onboarding-headline,
+  .onboarding-form-description,
+  .onboarding-policy,
+  .onboarding-copyrights
+    text-align center
+
+  .onboarding-form
+    margin-top 34px
+    padding-bottom 27px
+
+    .input-wrapper
+      margin-bottom 11px
+
+  .onboarding-form-controls
+    flex-wrap wrap
+
+    .btn,
+    .onboarding-form-controls-link
+      flex 0 0 100%
+
+    .onboarding-form-controls-link
+      padding-top 26px
+
+  .onboarding-form-description
+    padding 0 24px 32px
+
+  .social-login
+    margin 28px 0 19px
+
+    .btn
+      flex 0 0 100%
+      margin 12px 0 !important
+
+  .onboarding-copyrights
+    position relative
+    bottom 0
+
+  .onboarding-policy
+    padding-left 0
+    padding-right 0
+    padding-bottom 38px
+
+  .onboarding-form-controls-variants
+    flex 0 0 100%
+    text-align center
+    padding-top 24px
+
+    .onboarding-form-controls-link
+      padding-top 0
+      display block
+      width 100%
+      margin-bottom -2px
+      letter-spacing 0
+
+  .recover
+    .logo-default
+      width 32px
+      margin 0 auto
+
+    .logo-text
+      display none
+
+    .recover-form
+      margin-top 32px
+      padding 0 32px 30px
+      box-sizing border-box
+
+    .onboarding-form-controls
+      .btn
+        flex 0 0 100%
+
+    .onboarding-copyrights
+      position absolute
+      padding-top 24px
+      bottom 30px
