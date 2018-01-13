@@ -1183,13 +1183,15 @@ h6 {
   left: 18px;
 }
 .main-avatar-wrapper:hover:before,
-.main-avatar-wrapper:focus:before {
+.main-avatar-wrapper:focus:before,
+.main-avatar-wrapper:focus-within:before {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 .main-avatar-wrapper:hover .user-menu-dropdown,
-.main-avatar-wrapper:focus .user-menu-dropdown {
+.main-avatar-wrapper:focus .user-menu-dropdown,
+.main-avatar-wrapper:focus-within .user-menu-dropdown {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translate(0, 100%);
