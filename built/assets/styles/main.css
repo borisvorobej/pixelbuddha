@@ -959,13 +959,15 @@ h6 {
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 .main-menu-item.-submenu:hover:before,
-.main-menu-item.-submenu:focus:before {
+.main-menu-item.-submenu:focus:before,
+.main-menu-item.-submenu:focus-within:before {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 .main-menu-item.-submenu:hover .main-menu-sub,
-.main-menu-item.-submenu:focus .main-menu-sub {
+.main-menu-item.-submenu:focus .main-menu-sub,
+.main-menu-item.-submenu:focus-within .main-menu-sub {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translate(0, 100%);
