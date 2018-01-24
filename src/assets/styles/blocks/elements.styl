@@ -100,6 +100,7 @@
   text-align center
   box-sizing border-box
   cursor pointer
+  font-family Roboto
   transition color .15s ease-in-out, border-color .15s ease-in-out, background .15s ease-in-out
 
   &.-disabled,
@@ -141,33 +142,33 @@
     font-size 14px
     letter-spacing 0
     line-height 16px
-    font-weight 500
+    font-weight 600
     padding 7px 19px
 
   &.-default
     font-size 14px
     letter-spacing 0
     line-height 16px
-    font-weight 500
+    font-weight 600
     padding 13px 28px 12px
 
   &.-smallMedium
     font-size 17px
     line-height 26px
-    font-weight 500
+    font-weight 600
     padding 8px 38px 8px
 
   &.-medium
     font-size 18px
     line-height 27px
-    font-weight 500
+    font-weight 600
     padding 13px 48px 14px
 
   &.-mediumLarge
     min-width 335px
     font-size 20px
     line-height 30px
-    font-weight 500
+    font-weight 600
     padding 15px 30px 13px
     border-width 2px
 
@@ -175,18 +176,33 @@
     min-width 226px
     font-size 20px
     line-height 30px
-    font-weight 500
+    font-weight 600
     padding 18px 30px 17px
     border-width 2px
 
   &.-large
     font-family 'Josefin Sans'
     font-size 26px
+    font-weight 600
     letter-spacing -1.25px
     line-height 34px
     text-align center
     padding 25px 48px 22px
     border-width 2px
+
+  &.-facebook-btn
+    padding-left 70px
+
+  &.-google-btn
+    padding-left 66px
+
+  &.-dropbox-btn
+    text-align left
+    padding-left 50px !important
+    max-width 180px
+
+    svg.btn-icon
+      left 14px
 
   &.-grey
     background $grey-lightest-main
@@ -203,6 +219,7 @@
       background-color $violet
 
   &.-violet
+    border none
     color $white
     background $violet
 
@@ -229,7 +246,6 @@
 
     &[disabled]
       background $red
-      background $violet-disabled
       opacity .25
 
   &.-redCold
@@ -378,18 +394,33 @@
 
 
 @media (max-width 620px)
-  .btn.-large
-    font-size 20px
-    letter-spacing 0
-    line-height 30px
-    padding 16px 48px 10px
-    font-weight 600
+  .btn
+    &.-large
+      font-size 20px
+      letter-spacing 0
+      line-height 30px
+      padding 16px 48px 10px
+      font-weight 600
 
-  .btn.-aboveMediumLarge
-    font-size 19px
-    padding 14px 30px 14px
-    letter-spacing -.75px
+    &.-aboveMediumLarge
+      font-size 19px
+      padding 14px 30px 14px
+      letter-spacing -.75px
 
-  .btn.-social
-    padding 15px 24px 15px 42px
-    letter-spacing -1px
+    &.-social
+      padding 15px 24px 15px 42px
+
+    &.-smallMedium
+      padding 8px 16px
+
+    &.-smallMedium
+      &.-white
+        border-width 0
+
+        &.-alwaysWithBorder
+          border-width 1px
+
+      &.-dropbox-btn
+        border-width 1px
+        max-width 136px
+        padding-left 54px !important

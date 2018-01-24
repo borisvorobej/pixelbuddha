@@ -42,16 +42,20 @@ body, input, textarea
 //   outline 1px solid #000
 
 #overlay
-  background rgba(0,0,0, 0.85)
+  background #272727
   position fixed
   z-index 9990
   top 0
   left 0
   width 100%
   height 100%
+  // transform translate(0, 0)
+  opacity .3
+  transition opacity .15s ease-in-out
 
-.-hide
-  display none
+  &.-hide
+    opacity 0 !important
+    transform translate(-100%, -100%)
 
 .br
   display block
@@ -92,4 +96,7 @@ input[type='submit']
     display block
 
   .-tablet
+    display block
+
+  .mobile-block
     display block
