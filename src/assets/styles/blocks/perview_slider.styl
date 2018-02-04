@@ -25,11 +25,15 @@
 
 .perview_slider-big_picture
   width 100%
-  height calc(100vh * 0.68)
   background-size cover
-  background-position center center
+  background-position top center
   overflow hidden
   border-radius 4px
+
+  &:before
+    content ''
+    display block
+    padding-top 66.66%
 
 .preview-images-slider
   margin-top 30px
@@ -131,7 +135,7 @@
 
   .preview-images-slider
     height 80px
-    margin-top 0
+    margin-top 16px
 
     .slick-next,
     .slick-prev

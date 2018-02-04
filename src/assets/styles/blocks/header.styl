@@ -29,7 +29,7 @@
 
 .main-menu
   position absolute
-  z-index 2
+  z-index 12
   top 0
   left 50%
   transform translate(-50%, 0)
@@ -50,7 +50,7 @@
   align-items center
   height $headerHeight
   font-family Roboto
-  font-weight 500
+  font-weight 700
   font-size 19px
   color $white
   text-decoration none
@@ -60,10 +60,6 @@
 
   &:focus
     background $red-hover
-
-.main-menu-link:not(*:root) {
-  font-size 20px
-}
 
 // Dropdown menu
 // ============================================
@@ -126,7 +122,7 @@
 
   &.-active
     .main-search-wrapper
-      dropDownVisible()
+      searchDropDownVisible()
 
     .main-search-icon
       svg
@@ -146,8 +142,9 @@
 
   &::before
     content ''
-    topAngle(#eee)
+    topAngle($grey-lightest)
     topAngleHidden()
+    z-index 12
 
   svg
     fill $white
@@ -160,7 +157,8 @@
       opacity .5
 
 .main-search-wrapper
-  dropdownHidden()
+  searchDropDownHidden()
+  z-index 11
   left 0
   width 100%
   height 62px
@@ -194,13 +192,19 @@
   height 100%
   box-sizing border-box
   padding 6px 72px 6px 30px
-  font-size 24px
+  font-size 19px
   line-height 30px
   border 0
-  background #eee
+  background $grey-lightest
+  border 1px solid #F0F0F0
+  color $grey
+  font-weight 500
+  caret-color $grey-light
 
   +placeholder()
     color $grey-light
+    font-size 19px
+    font-weight 500
 
 // User controls
 // ============================================
@@ -208,6 +212,7 @@
   display flex
   align-self stretch
   position relative
+  z-index 12
   padding 0 36px 0 6px
   cursor pointer
 

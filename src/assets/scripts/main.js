@@ -1,6 +1,10 @@
 var $html = $('html');
 var $body = $('body');
 
+$body.on('click', function (e) {
+	console.log(e);
+})
+
 // Disabled buttons handler
 $('[disabled]').on('click', function (e) {
 	e.preventDefault();
@@ -64,11 +68,15 @@ $('#js-main-search-icon').on('click', function () {
 	$('#js-main-search').toggleClass('-active');
 	if ($('#js-main-search').hasClass('-active')) {
 		$('#js-main-search-input').focus();
+		$('#panel').addClass('search-open');
+	} else {
+		$('#panel').removeClass('search-open');
 	}
 });
 
 $('#js-main-search-close').on('click', function () {
 	$('#js-main-search').removeClass('-active');
+	$('#panel').removeClass('search-open');
 });
 
 // Handle Mobile Menues
@@ -155,11 +163,14 @@ $previewImagesItem.on('click', function (e) {
 
 $('.js-view-password').on('click', function (e) {
 	var $input = $(this).closest('.input-wrapper').find('.input');
-	if ($(this).hasClass('-show')) {
-		$(this).removeClass('-show');
+	var $label = $(this).closest('.input-wrapper');
+
+
+	if ($label.hasClass('-show-password')) {
+		$label.removeClass('-show-password');
 		$input.attr('type', 'password');
 	} else {
-		$(this).addClass('-show');
+		$label.addClass('-show-password');
 		$input.attr('type', 'text');
 	}
 });

@@ -23,6 +23,12 @@
     .related-products-image-wrapper:before
       padding-top 74%
 
+  .post-item
+    width calc(25% - 40px)
+    box-sizing border-box
+    display inline-block
+    vertical-align top
+
 .related-products-item
   cursor pointer
   display inline-block
@@ -105,10 +111,25 @@
   color $blue-dark
   transition color .15s ease-in-out
 
+@media (max-width 1350px)
+  .related-products-list
+    .post-item
+      width calc(33.33% - 40px)
+
+      &:last-child
+        display none
+
 @media (max-width 1160px)
   .related-products
     margin-top -50px
     padding 50px 0 73px
+
+  .related-products-list
+    .post-item
+      width calc(33.33% - 40px)
+
+      &:last-child
+        display none
 
   .related-products-list.-articles
     margin-top -8px
@@ -158,6 +179,13 @@
   .related-products-item-name
     line-height 25px
 
+  .related-products-list
+    .post-item
+      width calc(50% - 40px)
+
+      &:last-child
+        display inline-block
+
 @media (max-width 620px)
 
   .content-wrapper.-publication .related-products.-mobile
@@ -171,7 +199,10 @@
     padding-bottom 37px
 
   .related-products-list
-    margin -20px 18px
+    margin -20px -4px
+
+    .post-item
+      width calc(100% - 40px)
 
     &.-articles
       margin -20px 0

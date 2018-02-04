@@ -5,7 +5,7 @@
     width 100%
     padding-bottom 66.5%
     background-size cover
-    background-position center center
+    background-position top center
     background-repeat no-repeat
     margin-bottom 30px
     border-radius 4px
@@ -34,7 +34,7 @@
 
 .freebie-content-wrapper
   display flex
-  flex-wrap wrap
+  // flex-wrap wrap
 
   .freebie-content-aside
     flex 0 0 300px
@@ -44,9 +44,6 @@
     .share-block
       padding-top 31px
       text-align center
-
-  .freebie-content
-    flex-grow 1
 
   .freebie-download
     padding 5px 0 0
@@ -177,6 +174,8 @@
       margin -10px 0
 
   .freebie-content-wrapper
+    flex-wrap wrap
+
     .freebie-content-aside,
     .freebie-content
       flex 0 0 100%

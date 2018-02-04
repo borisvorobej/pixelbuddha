@@ -176,18 +176,17 @@
 
 .social-list
   padding 0
-  margin -4px -8px 0
+  margin -5px -8px 0
 
 .social-list-link
-  padding 0 8px
+  padding 1px 8px
   display inline-block
   vertical-align middle
   text-decoration none
-  opacity .8
-  transition opacity .15s ease-in-out
 
   svg
-    fill $white
+    fill #d4d4d4
+    transition fill .15s ease-in-out
 
   &[disabled]
     opacity .1
@@ -200,7 +199,8 @@
 
   &:hover,
   &:active
-    opacity 1
+    svg
+      fill $white
 
   &:active
     transform translate(0, 1px)

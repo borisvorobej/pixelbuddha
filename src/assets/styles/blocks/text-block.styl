@@ -31,6 +31,8 @@
           height: 5px;
 
   .image-wrapper
+    padding 23px 0 42px
+
     img
       width 100%
 
@@ -65,6 +67,11 @@ h3.text-block-headline
   color $black
   margin -4px 0 12px
   padding 0
+
+h4.text-block-headline
+  font-size 16px
+  text-transform uppercase
+  color $black
 
 .text-block-list
   li
@@ -158,6 +165,9 @@ h3.text-block-headline
     position relative
     z-index 1
 
+    &.-freebie
+      border-radius 4px
+
   .author-block-image
     width 100%
     overflow hidden
@@ -170,7 +180,7 @@ h3.text-block-headline
     font-size: 12px;
     margin-bottom -4px
     text-transform: uppercase;
-    font-weight 500
+    font-weight 600
     color $grey-light
 
   .author-block-name
@@ -178,6 +188,18 @@ h3.text-block-headline
     font-size 23px
     color $black
     padding-bottom 6px
+
+    .link
+      color $black
+
+      &:hover
+        color $red
+
+      &:active
+        color $red-active
+
+    &.-freebie
+      font-weight 700
 
   .author-block-description
     font-size 14px

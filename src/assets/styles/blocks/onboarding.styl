@@ -5,6 +5,8 @@
 .onboarding-left
   flex 0 0 50%
   box-sizing border-box
+  display flex
+  justify-content flex-end
 
   .logo-default
     margin-left -10px
@@ -16,15 +18,26 @@
   flex-direction column
   min-height 100%
   box-sizing border-box
-  padding 90px 140px
+  padding 90px 140px 145px
+  width 100%
+  max-width 760px
 
 .onboarding-right
   flex 0 0 50%
   display flex
+  // justify-content center
+  align-items flex-start
+  flex-direction column
+  background $grey-lightest-main
+  padding-top 140px
+
+.onboarding-right-wrapper
+  display flex
   justify-content center
   align-items center
   flex-direction column
-  background $grey-lightest-main
+  width 100%
+  max-width 760px
 
 .onboarding-main-image
   width 100%
@@ -85,6 +98,11 @@
   .btn
     margin-right 28px
 
+    &.-aboveMediumLarge
+      font-size 21px
+      padding-left 10px
+      padding-right 10px
+
     &.-wide
       flex 0 0 100%
       margin-right 0
@@ -123,12 +141,21 @@
   line-height 28px
   padding-bottom 30px
 
+  .link
+    color $grey-light-medium
+
+    &:hover
+      color $red
+
+    &:active
+      color $red-hover
+
 .onboarding-copyrights
   color $grey-light
   font-size 14px
   line-height 22px
   position absolute
-  bottom 30px
+  bottom 84px
   margin-left 10px
 
 .social-login
@@ -182,11 +209,11 @@
 
 @media (max-width 1400px)
   .onboarding-left-wrapper
-    padding 90px 90px
+    padding 90px 90px 145px
 
 @media (max-width 1280px)
   .onboarding-left-wrapper
-    padding 90px 80px
+    padding 90px 80px 145px
 
   .onboarding-form-controls
 
@@ -211,7 +238,7 @@
   .onboarding-left-wrapper
     max-width 488px
     margin 0 auto
-    padding 90px 0
+    padding 90px 0 145px
 
   .onboarding-form-controls
     .btn
@@ -225,7 +252,7 @@
     width 236px
 
   .onboarding-left-wrapper
-    padding 48px 32px
+    padding 48px 32px 84px
 
     .logo-default
       margin 0 auto

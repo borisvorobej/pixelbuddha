@@ -93,8 +93,19 @@
       display block
       fill $grey-light
 
-      &.-show
-        fill $violet-border
+    .input-icon.-password
+      display none
+      margin-top -1px
+
+    &.-show-password
+      .input-icon.-text
+        display none
+
+      .input-icon.-password
+        display block
+
+      // &.-show
+      //   fill $violet-border
 
     &.-medium
       .input-icon.-view-password
