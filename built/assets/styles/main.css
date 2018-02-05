@@ -157,6 +157,10 @@ body.-menu-opened {
   background: #f14b11;
   color: #fff;
 }
+*::-moz-selection {
+  background: #f14b11;
+  color: #fff;
+}
 body,
 input,
 textarea {
@@ -1918,6 +1922,9 @@ h2.section-header-headline {
   text-transform: none;
   font-weight: 500;
 }
+h2.section-header-headline.-roboto {
+  font-family: Roboto;
+}
 .section-header-description {
   font-size: 14px;
   color: #747474;
@@ -2649,6 +2656,11 @@ h2.section-header-headline {
     margin-bottom: 45px;
   }
 }
+@media (max-width: 992px) {
+  .fonts-preview.-desktop {
+    display: none;
+  }
+}
 @media (max-width: 620px) {
   .fonts-preview-input {
     padding: 13px 12px 12px 19px;
@@ -2678,8 +2690,8 @@ h2.section-header-headline {
   box-sizing: border-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .onboarding-left .logo-default {
   margin-left: -10px;
@@ -2703,8 +2715,8 @@ h2.section-header-headline {
       flex: 0 0 50%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
   background: #f0f5f6;
@@ -3618,6 +3630,8 @@ body {
 .site-preview-links {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   color: #c9c9c9;
   font-size: 14px;
   font-weight: 500;
@@ -3964,17 +3978,19 @@ body {
   .preview-images-slider .slick-prev {
     left: -18px;
   }
-  .perview_slider-big_picture {
-    height: calc(100vh * 0.57);
-  }
 }
 @media (max-width: 620px) {
   .perview_slider-big_picture {
     display: none;
   }
   .preview-images-item {
-    height: 224px;
     margin: 0 8px;
+    height: auto;
+  }
+  .preview-images-item:after {
+    content: '';
+    display: block;
+    padding-top: 66.66%;
   }
   .preview-images-item:before {
     display: none;
@@ -3983,7 +3999,7 @@ body {
     opacity: 1;
   }
   .preview-images-slider {
-    height: 224px;
+    height: auto;
   }
   .preview-images-slider:before,
   .preview-images-slider:after {

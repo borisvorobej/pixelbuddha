@@ -147,16 +147,18 @@
     .slick-prev
       left -18px
 
-  .perview_slider-big_picture
-    height calc(100vh * 0.57)
-
 @media (max-width 620px)
   .perview_slider-big_picture
     display none
 
   .preview-images-item
-    height 224px
     margin 0 8px
+    height auto
+
+    &:after
+      content ''
+      display block
+      padding-top 66.66%
 
     &:before
       display none
@@ -165,7 +167,7 @@
       opacity 1
 
   .preview-images-slider
-    height 224px
+    height auto
 
     &:before,
     &:after
