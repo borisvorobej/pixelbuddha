@@ -1,0 +1,30 @@
+.table-default
+  border-collapse collapse
+  border-radius 4px
+  border-style hidden
+  box-shadow 0 0 0 1px $grey-border
+
+  td
+    border 1px solid $grey-border
+    padding 17px 32px
+
+  thead
+    font-size 19px
+    font-weight 600
+
+@media (max-width 1260px)
+  .table-default td
+    padding 17px 24px
+
+@media (max-width 620px)
+  .table-default
+    thead
+      font-size 15px
+      line-height 21px
+
+    tbody
+      font-size 13px
+      line-height 17px
+
+    td
+      padding 15px

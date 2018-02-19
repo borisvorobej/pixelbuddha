@@ -1,15 +1,17 @@
 'use strict';
 
+var $document = $(document);
 var $html = $('html');
 var $body = $('body');
-
-$body.on('click', function (e) {
-	console.log(e);
-});
 
 // Disabled buttons handler
 $('[disabled]').on('click', function (e) {
 	e.preventDefault();
+});
+
+// Expandable
+$('.js-expandable-headline').on('click', function () {
+	$(this).closest('.expandable-item').toggleClass('-opened');
 });
 
 // Items Selector
@@ -339,4 +341,71 @@ if (document.getElementById('js-main-menu-mobile')) {
 
 	setHeaderComportament(slideMenu, 'left');
 	setHeaderComportament(slideoutUser, 'right');
+}
+
+// Search input
+
+var $searchInput = $('#searchInput'),
+    $buffer = $('#searchBuffer');
+
+$searchInput.on('input', function () {
+	$buffer.text($searchInput.val());
+	$searchInput.width($buffer.width() + 1);
+});
+
+$('.js-section-header-search-clear').on('click', function () {
+	$searchInput.val('');
+});
+
+// ScrollNav
+var $licenseTermsContent = $('.license-terms-content');
+
+if ($licenseTermsContent.length > 0) {
+	$licenseTermsContent.scrollNav({
+		insertTarget: $('#license-terms-nav-menu'),
+		headlineText: 'Licensing by Category',
+		showTopLink: false
+	});
+}
+
+var $nav = $('.license-terms-aside-wrapper');
+
+var checkNav = function checkNav(scrollTop, navTop, loanHeight) {
+	if (scrollTop > navTop - 100 && scrollTop < loanHeight - navTop + 382) {
+		if ($nav.hasClass('m-fixed') === false) {
+			$nav.addClass('m-fixed');
+		}
+	} else {
+		$nav.removeClass('m-fixed');
+	}
+	if (scrollTop >= loanHeight - navTop + 382) {
+		if ($nav.hasClass('m-bottom') === false) {
+			$nav.addClass('m-bottom');
+			return $nav.removeClass('m-fixed');
+		}
+	} else {
+		return $nav.removeClass('m-bottom');
+	}
+};
+
+var setNav = function setNav() {
+	var $licenseTermsContent = $('.license-terms-content');
+	var navTop = $nav.offset().top;
+	var scrollTop = $document.scrollTop();
+	var loanHeight = $licenseTermsContent.height();
+	checkNav(scrollTop, navTop, loanHeight);
+	$(window).scroll(function (_this) {
+		return function () {
+			var scrollTop = $document.scrollTop();
+			return checkNav(scrollTop, navTop, loanHeight);
+		};
+	}(this));
+};
+
+if ($nav.length > 0) {
+	setNav();
+
+	$(window).on('resize', function () {
+		setNav();
+	});
 }

@@ -1,0 +1,556 @@
+.product-landing
+  &.-dark
+    .product-landing-headline
+      color $white
+
+    .product-landing-description
+      color #E8E8E8
+      opacity .8
+
+    .product-landing-main-link
+      color $violet
+      border-bottom-color $violet
+
+      &:hover
+        color $violet-hover
+        border-bottom-color $violet-hover
+
+      &:active
+        color $violet-active
+        border-bottom-color $violet-active
+
+  &.-right
+    .product-landing-wrapper
+      flex-direction row-reverse
+
+    .product-landing-content
+      padding 36px 0 36px 30px
+
+    .product-landing-image
+      transform translate(-100px, 0)
+      width calc(100% + 70px)
+
+    .product-landing-image-wrapper,
+    .product-landing-content
+      flex 0 0 50%
+
+.product-landing-wrapper
+  display flex
+  align-items center
+
+.product-landing-headline
+  font-size 48px
+  line-height 58px
+  font-weight 600
+  font-family 'Josefin Sans'
+  padding-bottom 30px
+
+.product-landing-description
+  font-size 18px
+  line-height 32px
+  padding-bottom 20px
+
+.product-landing-content
+  flex 0 0 calc(50% - 36px)
+  box-sizing border-box
+  padding 36px 60px 36px 0
+
+.product-landing-image-wrapper
+  flex 0 0 calc(50% + 36px)
+  text-align right
+
+  .product-landing-image
+    width calc(100% + 100px)
+
+.product-landing-main-link
+  linkDefault()
+  display inline-block
+  font-size 16px
+  line-height 28px
+  font-weight 600
+  border-bottom-width 2px
+  border-bottom-style solid
+  text-decoration none !important
+  padding-bottom 1px
+  transition color .15s ease-in-out, border-color .15s ease-in-out
+
+.product-landing-paragraph
+  margin 0 0 10px
+
+.landing-features
+  display flex
+
+.landing-features-item
+  width 50%
+  display flex
+  align-items center
+  justify-content center
+  text-align center
+  min-height 500px
+  box-sizing border-box
+  padding 60px 0
+
+  &.-dark
+    color $white
+
+.landing-features-item-wrapper
+  width 460px
+
+.landing-features-icon-wrapper
+  height 93px
+  margin-top -10px
+
+.landing-features-headline
+  font-size 36px
+  line-height 43px
+  font-family 'Josefin Sans'
+  font-weight 600
+  margin-top 32px
+
+.landing-features-description
+  font-size 18px
+  line-height 32px
+  margin-top 12px
+
+.landing-membership-plans-wrapper
+  background $dark
+  color $white
+  text-align center
+  padding 117px 0 140px
+
+.landing-membership-plans-headline
+  font-size 48px
+  line-height 58px
+  font-weight 600
+  font-family 'Josefin Sans'
+
+.landing-membership-plans-description
+  font-size 18px
+  line-height 32px
+  color $white
+  opacity .8
+  width 650px
+  margin 14px auto 60px
+
+.landing-membership-plan-list
+  width 100%
+  max-width 1400px
+  margin 0 auto
+  display flex
+  box-sizing border-box
+  padding 38px 160px 0
+
+.landing-membership-plan-item
+  width 50%
+  color $black
+  position relative
+  overflow hidden
+  display flex
+  align-items stretch
+
+  &:nth-child(2n)
+    .landing-membership-plan-item-wrapper
+      border-left 0
+
+  .landing-membership-plan-item-wrapper
+    border 4px solid $white
+    background-color #f6f9f9
+    padding 44px 0 0
+    flex 0 0 100%
+    box-sizing border-box
+    display flex
+    flex-direction column
+
+  .landing-membership-plan-range
+    font-family 'Josefin Sans'
+    font-weight 600
+    line-height 19px
+    font-size 16px
+    text-align center
+    text-transform uppercase
+    color $violet
+
+  .landing-membership-plan-image-wrapper
+    width 100%
+    max-width 350px
+    height 306px
+    margin 0 auto 48px
+    display flex
+    align-items flex-end
+
+  .landing-membership-plan-image
+    width 100%
+
+  .landing-membership-plan-pricing
+    font-family 'Josefin Sans'
+    font-size 24px
+    line-height 29px
+    font-weight 600
+    margin-bottom 8px
+
+  .landing-membership-plan-price
+    font-size 48px
+    line-height 58px
+
+  .landing-membership-plan-description
+    font-size 16px
+    line-height 28px
+    color #5E5E5E
+    width 360px
+    margin 0 auto 42px
+
+  .btn
+    border-radius 0
+    text-transform uppercase
+    font-size 22px
+    line-height 36px
+    font-weight 600
+    margin-top auto
+
+  .landing-membership-plan-saving
+    width 180px
+    height 38px
+    background $red-secondary
+    color $white
+    font-size 15px
+    text-transform uppercase
+    line-height 23px
+    font-weight 600
+    transform rotate(45deg)
+    position absolute
+    top 22px
+    right -48px
+    box-sizing border-box
+    padding-top 8px
+
+.product-landing-faq
+  &.-dark
+    color $white
+
+.product-landing-faq-wrapper
+  width 100%
+  max-width 1400px
+  margin 0 auto
+  box-sizing border-box
+  padding 118px 160px 80px
+
+.product-landing-faq-headline
+  font-size 48px
+  line-height 58px
+  font-weight 600
+  font-family 'Josefin Sans'
+  text-align center
+  margin 0 0 98px
+
+.product-landing-faq-list
+  column-count 2
+  column-gap 60px
+
+.product-landing-faq-item
+  break-inside avoid
+  padding-bottom 38px
+
+.product-landing-faq-item-headline
+  font-weight 600
+  line-height 34px
+  font-size 26px
+  font-family 'Josefin Sans'
+  letter-spacing -1px
+  padding-bottom 12px
+
+.product-landing-faq-item-description
+  font-size 16px
+  line-height 28px
+  color $white
+  opacity .8
+
+@media(min-width 1600px)
+  .product-landing-image-wrapper .product-landing-image
+    width 100%
+    transform translate(0)
+
+  .product-landing.-right .product-landing-image
+    width 100%
+    transform translate(0)
+
+@media(max-width 1400px)
+  .product-landing .base-col
+    padding 0 80px
+    overflow hidden
+
+  .landing-membership-plan-list,
+  .product-landing-faq-wrapper
+    padding-left 100px
+    padding-right 100px
+
+  .landing-promo
+    padding-top 86px
+    padding-bottom 90px
+
+  .landing-promo-image-wrapper
+    max-width 800px
+
+  .landing-promo-headline
+    margin-top 76px
+    font-size 48px
+
+  .landing-promo-description
+    margin-top 12px
+    font-size 18px
+    line-height 32px
+    margin-top 11px
+    margin-bottom 48px
+
+  .product-landing-headline
+    font-size 44px
+    line-height 53px
+
+  .product-landing-content
+    flex 0 0 calc(50% - 20px)
+
+  .product-landing-image-wrapper
+    flex 0 0 calc(50% + 20px)
+
+  .product-landing-description
+    font-size 16px
+    line-height 28px
+
+  .product-landing-image-wrapper .product-landing-image
+    width calc(100% + 160px)
+
+  .product-landing.-right .product-landing-image
+    width calc(100% + 124px)
+
+  .product-landing.-right .product-landing-content
+    padding-left 50px
+
+  .product-landing.-right .product-landing-content
+    flex 0 0 calc(50% - 6px)
+
+  .product-landing.-right .product-landing-image-wrapper
+    flex 0 0 calc(50% + 6px)
+
+  .landing-features-item
+    min-height 600px
+
+  .landing-features-headline
+    margin-top 52px
+
+  .landing-features-icon-wrapper
+    margin-top 5px
+
+  .landing-membership-plans-description
+    margin-bottom 32px
+
+  .landing-membership-plans-wrapper
+    padding-bottom 124px
+
+  .product-landing-faq-wrapper
+    padding-top 96px
+    padding-bottom 72px
+
+  .product-landing-faq-headline
+    margin-bottom 58px
+
+@media(max-width 992px)
+  .landing-promo
+    padding-top 96px
+
+  .landing-promo-image-wrapper
+    max-width 598px
+
+  .landing-promo-headline
+    font-size 42px
+    margin-top 44px
+
+  .landing-promo-description
+    margin-top 9px
+    margin-bottom 42px
+    font-size 16px
+    line-height 28px
+    width 650px
+
+  .landing-promo-buttons .btn.-medium
+    padding 15px 39px
+
+  .product-landing-wrapper
+    flex-wrap wrap
+
+  .product-landing-content,
+  .product-landing.-right .product-landing-content
+    flex 0 0 100%
+    max-width 606px
+    margin 0 auto
+    padding 96px 20px 58px
+
+  .product-landing-image-wrapper,
+  .product-landing.-right .product-landing-image-wrapper
+    flex 0 0 100%
+
+  .product-landing-image-wrapper .product-landing-image,
+  .product-landing.-right .product-landing-image
+    width calc(100% - 32px)
+
+  .product-landing .base-col
+    padding 0
+
+  .product-landing.-right .product-landing-wrapper
+    flex-direction row
+
+  .landing-features
+    flex-wrap wrap
+
+  .landing-features-item
+    width 100%
+    min-height 460px
+
+  .landing-features-item-wrapper
+    width 100%
+    max-width 570px
+
+  .landing-features-headline
+    margin-top 40px
+
+  .landing-membership-plans-wrapper
+    padding 95px 0 140px
+
+  .landing-membership-plan-list
+    padding 18px 45px 0
+
+  .product-landing-faq-wrapper
+    padding-left 45px
+    padding-right 45px
+    padding-bottom 54px
+
+  .landing-membership-plan-item .landing-membership-plan-image-wrapper
+    height 232px
+    margin 0 auto 35px
+    padding 0 40px
+    box-sizing border-box
+
+  .landing-membership-plan-item .landing-membership-plan-description
+    width 100%
+    padding 0px 30px
+    margin-bottom 52px
+    box-sizing border-box
+
+  .landing-membership-plan-item .btn
+    font-size 18px
+    line-height 27px
+    padding 22px 48px 16px
+
+  .product-landing-faq-list
+    column-count 1
+
+@media(max-width 660px)
+  .landing-promo-image
+    width 707px
+    position relative
+    left 50%
+    transform translate(-50%, 0)
+
+  .landing-promo-image-wrapper
+    overflow hidden
+
+  .landing-promo-headline
+    font-size 36px
+    margin-top 50px
+    line-height 49px
+
+  .landing-promo
+    padding-top 34px
+    padding-bottom 60px
+
+  .landing-promo-description
+    margin-top 14px
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom 38px
+
+  .product-landing-content, .product-landing.-right .product-landing-content
+    padding 57px 32px 58px
+
+  .product-landing-headline
+    padding-bottom 22px
+    font-size 32px
+    line-height 38px
+
+  .product-landing-image-wrapper .product-landing-image, .product-landing.-right .product-landing-image
+    width 100%
+    transform translate(0)
+
+  .landing-features-item
+    padding-top 92px
+    padding-bottom 92px
+    min-height 0
+
+  .landing-features-item-wrapper
+    padding 0 24px
+
+  .landing-features-headline
+    font-size 32px
+    line-height 38px
+
+  .landing-features-description
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 15px;
+
+  .landing-membership-plans-headline
+    font-size 32px
+    line-height 38px
+
+  .landing-membership-plans-wrapper
+    padding 57px 0 58px
+
+  .landing-membership-plans-description
+    width 100%
+    box-sizing border-box
+    padding 0 24px
+    font-size 16px
+    line-height 28px
+    margin-top 12px
+    margin-bottom 18px
+
+  .landing-membership-plan-list
+    padding 18px 20px 0
+    flex-wrap wrap
+
+  .landing-membership-plan-item
+    width 100%
+
+  .landing-membership-plan-item .landing-membership-plan-image-wrapper
+    height 182px
+    padding 0 33px
+
+    &.-yearly
+      height 233px
+
+  .landing-membership-plan-item .landing-membership-plan-item-wrapper
+    margin-bottom 20px
+
+  .product-landing-faq-wrapper
+    padding 57px 32px 33px
+
+  .product-landing-faq-headline
+    font-size 36px
+    line-height 43px
+    margin-bottom 43px
+    text-align left
+
+  .landing-membership-plan-item:nth-child(2n) .landing-membership-plan-item-wrapper
+    border-left 4px solid $white
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi)
+	.product-landing-headline,
+  .landing-features-headline,
+  .landing-membership-plans-headline,
+  .product-landing-faq-headline
+    font-weight 700

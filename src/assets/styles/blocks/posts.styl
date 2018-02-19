@@ -2,6 +2,11 @@
   padding-bottom 54px
   margin -24px -20px
 
+  &.-full
+    .post-item,
+    .post-partner
+      width calc(25% - 40px)
+
 .post-item,
 .post-partner
   width calc(33.33% - 40px)
@@ -106,7 +111,7 @@
   a
     display block
     font-family 'Josefin Sans'
-    font-weight 700
+    font-weight 600
     line-height 34px
     font-size 26px
     color $blue-dark
@@ -221,15 +226,30 @@
   .posts-list
     padding-bottom 68px
 
+    &.-full
+      .post-item,
+      .post-partner
+        width calc(33.33% - 40px)
+
     .post-item,
     .post-partner
       width calc(50% - 40px)
       margin 24px 20px
 
+@media (max-width 960px)
+  .posts-list.-full
+    .post-item,
+    .post-partner
+      width calc(50% - 40px)
 
 @media (max-width 620px)
   .posts-list
     padding-bottom 44px
+
+    &.-full
+      .post-item,
+      .post-partner
+        width calc(100% - 40px)
 
     &.-premium
       .post-image-wrapper
@@ -247,3 +267,12 @@
     .post-partner
       width calc(100% - 40px)
       margin 24px 20px
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi)
+	.post-headline a
+    font-weight 700

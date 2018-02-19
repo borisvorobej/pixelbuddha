@@ -1,0 +1,311 @@
+.-license-terms-section
+  padding-bottom 60px
+
+.-license-faq-section
+  padding 56px 0 80px
+  background $grey-lightest-main
+
+.-license-contact-section
+  padding 60px 0 78px
+
+.license-terms-wrapper
+  position relative
+  border 1px solid $grey-light
+  border-radius 4px
+  padding 72px 80px 92px
+  box-sizing border-box
+  color $grey
+  font-size 16px
+  line-height 28px
+  clearfix()
+
+  .table-default
+    color $grey
+    margin 42px 0 0
+    width 100%
+    max-width 880px
+
+  .big-desktop
+    display inline
+
+.license-terms-content
+  width calc(100% - 275px)
+  float left
+
+.license-terms-aside
+  float right
+  width 200px
+  padding-top 71px
+
+.license-terms-headline
+  font-size 36px
+  line-height 57px
+  font-weight 500
+  color $black
+  margin 0 0 15px
+
+.license-terms-info
+  font-size 14px
+  line-height 20px
+  color #949494
+  margin 18px 0 0
+
+.license-terms-item
+  margin 0 0 30px
+
+  &:last-child
+    margin-bottom 0
+
+.license-terms-aside-headline,
+.scroll-nav__heading,
+// .scroll-nav__list li:first-child a
+  display block
+  font-size 18px
+  line-height 28px
+  color $grey
+  font-weight 500
+  border-bottom 1px solid $grey-light
+  padding 0 0 23px
+  margin 0 0 17px
+  text-transform none
+
+.license-terms-menu-link,
+.scroll-nav__link
+  display inline-block
+  color $blue-dark
+  font-size 14px
+  line-height 33px
+  font-weight 600
+  transition color .15s ease-in-out
+  text-decoration none
+  text-transform uppercase
+  padding 4px 0
+
+  &:hover
+    color $red-hover
+    text-decoration underline
+
+  &:active
+    color $red-active
+    text-decoration underline
+    transform translate(0, 1px)
+
+  &.-active
+    color $grey-light
+    cursor default
+    text-decoration none
+
+.scroll-nav__item.active .scroll-nav__link
+  color $grey-light
+  cursor default
+  text-decoration none
+
+// .scroll-nav
+//   &.fixed
+//     position fixed
+//     top 0
+
+.license-terms-aside-wrapper
+  &.m-fixed
+    position fixed
+    top 100px
+
+  &.m-bottom
+    position absolute
+    bottom 64px
+
+.license-controls
+  margin 40px -10px 0
+
+  .btn
+    border 1px solid $grey-light
+    padding-left 18px
+    padding-right 18px
+    margin 0 10px
+
+.faq-wrapper
+  background $white
+  box-shadow 6px 6px 20px rgba(0, 0, 0, 0.12)
+  border-radius 4px
+
+.faq-headline,
+.license-contact-headline
+  font-size 30px
+  line-height 47px
+  font-weight 500
+  margin 0 0 38px
+
+.license-contact-headline
+  margin-bottom 4px
+
+.license-contact-description
+  font-size 16px
+  line-height 28px
+  color $grey
+  margin-bottom 24px
+
+.license-contact-refs
+  margin 12px 0 0
+
+.license-contact-mailto
+  linkDefault()
+  display inline-block
+  font-size 14px
+  line-height 20px
+  color #949494
+  text-decoration none
+
+  &:hover
+    color $red-hover
+
+  &:active
+    color $red-active
+
+@media (max-width 1260px)
+  .license-terms-wrapper
+    padding 54px 59px 70px
+
+  .license-terms-wrapper .table-default
+    margin-top 33px
+
+  .license-terms-content
+    width calc(100% - 240px)
+
+  .license-terms-aside
+    width 194px
+
+  .license-terms-wrapper .big-desktop
+    display none
+
+  .-license-faq-section
+    padding-bottom 89px
+
+@media (max-width 1150px)
+  .-license-terms-section,
+  .-license-faq-section,
+  .-license-contact-section,
+  .main-footer.-license
+    .base-col
+      padding 0 36px
+
+@media (max-width 1050px)
+  .license-terms-content
+    width 100%
+
+  .license-terms-aside
+    display none
+
+  .-license-terms-section .base-col,
+  .-license-faq-section .base-col,
+  .-license-contact-section .base-col,
+  .main-footer.-license .base-col
+    padding 0 44px
+
+  .license-terms-wrapper
+    padding 40px 40px 60px
+
+  .license-usage-td
+    width 150px
+
+  .-license-faq-section
+    padding 42px 0 80px
+
+  .faq-headline,
+  .license-contact-headline
+    margin-bottom 32px
+
+  .expandable-headline
+    line-height 32px
+
+  .expandable-item
+    padding 24px 36px
+
+  .-license-faq-section
+    padding-bottom 70px
+
+  .-license-contact-section
+    padding 44px 0 78px
+
+@media (max-width 620px)
+  .license-controls
+    margin-left -8px
+    margin-right -8px
+    text-align center
+
+    .mobile-hide
+      display none
+
+    .btn
+      margin 0 8px
+      padding-left 15px
+      padding-right 15px
+
+      &.-white
+        border 1px solid $grey-light
+
+  .-license-terms-section .base-col,
+  .-license-contact-section .base-col,
+  .main-footer.-license .base-col
+    padding 0 20px
+
+  .-license-faq-section
+    padding 34px 0 50px
+
+    .base-col
+      padding 0 32px
+
+  .-license-contact-section
+    padding 48px 0 66px
+
+    .license-contact-headline
+      margin-bottom 6px
+
+    .base-col
+      padding 0 32px
+
+    .btn.-white
+      border 1px solid $grey-light
+
+  .license-terms-wrapper
+    border 0
+    padding 0 12px
+
+  .license-terms-headline
+    font-size 28px
+    line-height 38px
+    margin-bottom 20px
+
+  .license-terms-content
+    padding-top 38px
+    border-top 1px solid $grey-light
+
+  .table-wrapper
+    margin 0 -12px
+
+  .license-terms-item
+    margin-bottom 34px
+
+  .-license-terms-section
+    padding-bottom 0
+
+    .content
+      margin-bottom 50px
+
+  .faq-headline,
+  .license-contact-headline
+    font-size 24px
+    line-height 34px
+    margin-bottom 28px
+
+  .faq-wrapper
+    margin 0 -12px
+
+  .expandable-headline
+    font-size 18px
+    line-height 25px
+
+  .expandable-item
+    padding 24px
+    font-size 14px
+    line-height 23px
+    margin-bottom 0

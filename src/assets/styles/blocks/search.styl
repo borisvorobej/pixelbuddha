@@ -1,0 +1,259 @@
+.search-input
+  border 0
+
+  transform translate(65px, 0)
+
+  &+.section-header-search-clear
+    transform translate(65px, 0)
+
+  &:invalid
+    width 196px !important
+
+  &::-webkit-input-placeholder
+    color $grey-light
+
+.section-header-search
+  .-mobile
+    display none
+
+#searchInput,
+#searchBuffer
+  font-size 48px
+  line-height 48px
+  font-family 'Josefin Sans'
+  text-transform uppercase
+  text-align left
+  font-weight 600
+
+.searchInputLabel
+  position absolute
+
+
+#searchInput
+  width: 100px;
+  min-width: 24px;
+  max-width 100%
+
+#searchBuffer
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  visibility: hidden;
+  white-space: pre;
+
+.section-header-search
+  text-align center
+  padding-top 5px
+  padding-bottom 30px
+
+  .section-header-search-tags
+    padding-bottom 50px
+
+.section-header-search-form
+  display flex
+  justify-content center
+  align-items center
+  padding-bottom 48px
+  padding-right 66px
+
+.section-header-search-clear
+  width 17px
+  height 16px
+  padding 12px 24px
+  margin-top -10px
+  cursor pointer
+
+  svg
+    width 17px
+    height 16px
+    fill #C4C4C4
+    transition fill .15s ease-in-out
+
+  &:hover
+    svg
+      fill $black
+
+.section-header-search-tags
+  font-size 0
+  margin -10px
+
+  &.-desktop
+    display block
+
+  &.-tablet
+    display block
+
+  .btn
+    margin 10px
+    padding 7px 26px
+
+.section-header-search-results
+  border-top 1px solid $grey-lighter-medium
+  padding-top 44px
+
+  .section-header-search-tags
+    margin-top 34px
+    margin-bottom 2px
+
+.section-header-search-results-headline
+  font-size 30px
+  line-height 47px
+  font-weight 500
+
+.section-header-search-results-description
+  font-size 16px
+  line-height 25px
+  color $grey-light-medium
+  padding-top 9px
+
+.section-header-search-results
+  .section-header-search-tags
+    padding-bottom 0
+    margin-top 24px
+
+@media (max-width 1160px)
+
+  .section-header-search-results
+    padding-top 44px
+
+  #searchInput,
+  #searchBuffer
+    font-size 38px
+    line-height 38px
+
+  .section-header-search
+    padding-top 10px
+    padding-bottom 20px
+
+  .search-input
+    border 0
+
+    &:invalid
+      width 155px !important
+
+  .section-header-search-results .section-header-search-tags
+    margin-top 24px
+
+@media (max-width 992px)
+  .section-header-search
+    margin-top -15px
+
+    .section-header-search-tags
+      padding-bottom 42px
+
+  .section-header-search-form
+    padding-bottom 32px
+    padding-right 46px
+
+  .section-header-search-results-headline
+    font-size 24px
+    line-height 38px
+
+  .section-header-search-results
+    padding-top 35px
+    padding-bottom 20px
+
+    .section-header-search-tags
+      padding-bottom 0
+      margin-bottom -8px
+
+  .section-header-search-tags
+    margin -8px
+
+    .btn
+      margin 8px
+      padding 7px 24px
+
+  #searchInput,
+  #searchBuffer
+    font-size 30px
+    line-height 47px
+
+  .section-header-search-clear
+    margin-top -8px
+    padding 12px 18px
+
+  .search-input
+    border 0
+
+    transform translate(45px, 0)
+
+    &+.section-header-search-clear
+      transform translate(45px, 0)
+
+
+
+  .search-input:invalid
+    width 124px !important
+
+  .section-header-search-results .section-header-search-tags
+    margin-top 26px
+
+@media (max-width 620px)
+  .section-header-search-tags
+    margin -4px
+
+    &.-desktop
+      display none
+
+    &.-tablet
+      display none
+
+    .btn.-white
+      border-width 1px
+      margin 4px
+
+  .section-header-search-results-description
+    font-size 14px
+
+  #searchInput,
+  #searchBuffer
+    font-size 23px
+    line-height 32px
+
+  .search-input:invalid
+    width 115px !important
+
+  .section-header-search-clear
+    margin-top -7px
+
+
+  .section-header-search
+    .-mobile
+      display block
+
+  .section-header-search-results
+    border-top 0
+    padding-top 0
+    padding-bottom 10px
+
+    .section-header-search-tags
+      margin-top 17px
+      margin-bottom 0
+      padding-bottom 5px
+
+  .section-header-search
+    margin-top -3px
+
+    .premium-controls
+      margin-bottom 36px
+
+  .section-header-search-form
+    padding-bottom 30px
+
+  .section-header-search-results-headline
+    font-size 21px
+    line-height 33px
+
+  .section-header-search-results-description
+    padding-top 4px
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi)
+	#searchInput,
+  #searchBuffer
+    font-weight 700

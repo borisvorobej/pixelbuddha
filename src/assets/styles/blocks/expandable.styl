@@ -1,0 +1,60 @@
+.expandable-item
+  padding 22px 46px
+  box-sizing border-box
+  border-bottom 1px solid rgba(201, 201, 201, 0.3)
+
+  &:last-child
+    border-bottom 0
+
+  &.-opened
+    .expandable-headline
+      .expandable-checkbox
+        background $violet-border
+        transform rotate(180deg)
+        svg
+          path
+            fill-opacity 1
+            fill $white
+
+    .expandable-body
+      display block
+
+.expandable-headline
+  color $blue-dark
+  font-size 21px
+  line-height 35px
+  font-weight 500
+  margin 0
+  padding 0 40px 0 0
+  box-sizing border-box
+  position relative
+  cursor pointer
+  transition color .15s ease-in-out
+
+  &:hover
+    color $red-hover
+
+  &:active
+    color $red-active
+
+  .expandable-checkbox
+    position absolute
+    right 0
+    top 5px
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background $grey-lightest-main
+
+.expandable-body
+  display none
+  font-size 16px
+  line-height 28px
+  color $grey
+  margin-top 12px
+  margin-bottom 12px
+  width 100%
+  max-width 880px

@@ -156,7 +156,7 @@
     font-size 17px
     line-height 26px
     font-weight 600
-    padding 8px 38px 8px
+    padding 7px 38px 7px
 
   &.-medium
     font-size 18px
@@ -183,7 +183,7 @@
   &.-large
     font-family 'Josefin Sans'
     font-size 26px
-    font-weight 700
+    font-weight 600
     line-height 34px
     text-align center
     padding 25px 48px 22px
@@ -423,3 +423,14 @@
         border-width 1px
         max-width 136px
         padding-left 54px !important
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi),
+only screen and ( min-resolution: 1.25dppx)
+	.btn.-large
+    font-weight 700

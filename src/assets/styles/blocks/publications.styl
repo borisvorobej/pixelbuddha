@@ -74,7 +74,7 @@
 
 .publication-header-headline
   font-size 48px
-  font-weight 700
+  font-weight 600
   line-height 65px
   text-transform uppercase
   color $black
@@ -134,7 +134,7 @@
   line-height: 34px;
   padding-bottom 4px
   font-size: 26px;
-  font-weight 700
+  font-weight 600
   color $blue-dark
 
 .site-preview-description
@@ -283,3 +283,13 @@
 
   .site-preview-headline
     padding-bottom 9px
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi)
+	.publication-header-headline,
+  .site-preview-headline
+    font-weight 700

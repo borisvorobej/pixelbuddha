@@ -38,6 +38,10 @@
   padding-right 60px
   box-sizing border-box
 
+  &.-full
+    width 100%
+    padding-right 0
+
   &.-full-small
     width 100%
     max-width 1040px
@@ -66,7 +70,7 @@
 h1.section-header-headline,
 h2.section-header-headline
   font-family Josefin Sans
-  font-weight 700
+  font-weight 600
 
   & + .section-header-description
     padding-top 9px
@@ -270,3 +274,13 @@ h2.section-header-headline
 
   &.search-open
     transform translate(0, 62px)
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and ( min--moz-device-pixel-ratio: 1.25),
+only screen and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and ( min-device-pixel-ratio: 1.25),
+only screen and ( min-resolution: 200dpi)
+	h1.section-header-headline,
+  h2.section-header-headline
+    font-weight 700
