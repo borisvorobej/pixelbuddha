@@ -349,12 +349,12 @@ var $searchInput = $('#searchInput'),
     $buffer = $('#searchBuffer');
 
 $searchInput.on('input', function () {
-	$buffer.text($searchInput.val());
+	$buffer.text($searchInput.text());
 	$searchInput.width($buffer.width() + 1);
 });
 
 $('.js-section-header-search-clear').on('click', function () {
-	$searchInput.val('');
+	$searchInput.text('');
 });
 
 // ScrollNav
@@ -364,7 +364,8 @@ if ($licenseTermsContent.length > 0) {
 	$licenseTermsContent.scrollNav({
 		insertTarget: $('#license-terms-nav-menu'),
 		headlineText: 'Licensing by Category',
-		showTopLink: false
+		showTopLink: false,
+		scrollOffset: 100
 	});
 }
 

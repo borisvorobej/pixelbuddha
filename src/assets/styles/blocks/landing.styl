@@ -11,9 +11,48 @@
   width 100%
   max-width 900px
   margin 0 auto
+  position relative
+  padding-bottom 15px
+
+.landing-promo-image-top_left,
+.landing-promo-image-middle_left,
+.landing-promo-image-top_right,
+.landing-promo-image-middle_right
+  position absolute
+  display block
+  transition translate .1s linear
+
+.landing-promo-image-top_left
+  width 240px
+  left 0
+  top 57px
+
+.landing-promo-image-middle_left
+  width 240px
+  left 0
+  top 163px
+
+.landing-promo-image-top_right
+  width 346px
+  right 0
+  top 64px
+  z-index 0
+
+.landing-promo-image-middle_right
+  width 230px
+  right 0
+  top 167px
+  z-index 1
 
 .landing-promo-image
   width 100%
+  position absolute
+  bottom 0
+  left 0
+
+.landing-promo-image-light
+  width 490px
+  margin 0 auto
 
 .landing-promo-headline
   font-size 56px

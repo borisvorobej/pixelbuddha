@@ -150,9 +150,14 @@
 
   <div id="panel" data-slideout-ignore>
     <div class="wrapper">
-      <div class="landing-promo">
+      <div class="landing-promo" data-0="background-position: 50% calc(100% + -176px);" data-350="background-position: 50% calc(100% + 300px);">
         <div class="landing-promo-image-wrapper">
-          <img src="./assets/images/content/landing_promo_illustration.png" alt="" class="landing-promo-image">
+          <img src="./assets/images/content/top_left.png" alt="" class="landing-promo-image-top_left" data-0="left: 0" data-250="left: -180px">
+          <img src="./assets/images/content/middle_left.png" alt="" class="landing-promo-image-middle_left" data-80="left: 0" data-350="left: -90px">
+          <img src="./assets/images/content/top_right.png" alt="" class="landing-promo-image-top_right" data-0="right: 0" data-250="right: -180px">
+          <img src="./assets/images/content/middle_right.png" alt="" class="landing-promo-image-middle_right" data-80="right: 0" data-250="right: -90px">
+          <img src="./assets/images/content/light.png" alt="" class="landing-promo-image-light">
+          <img src="./assets/images/content/base.png" alt="" class="landing-promo-image">
         </div>
 
         <h1 class="landing-promo-headline">
@@ -572,9 +577,10 @@
   <script src="assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="assets/libs/masonry/dist/masonry.pkgd.min.js"></script>
   <script src="assets/libs/slideout.js/dist/slideout.min.js"></script>
+  <script type="text/javascript" src="assets/libs/skrollr/dist/skrollr.min.js"></script>
   <script src="assets/scripts/main.js?26"></script>
-
   <script type="text/javascript">
+    var s = skrollr.init();
   </script>
 </body>
 </html>

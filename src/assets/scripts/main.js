@@ -339,15 +339,15 @@ if (document.getElementById('js-main-menu-mobile')) {
 // Search input
 
 var $searchInput = $('#searchInput'),
-    $buffer = $('#searchBuffer');
+  $buffer = $('#searchBuffer');
 
 $searchInput.on('input', function() {
-    $buffer.text($searchInput.val());
-    $searchInput.width($buffer.width() + 1);
+  $buffer.text($searchInput.text());
+  $searchInput.width($buffer.width() + 1);
 });
 
 $('.js-section-header-search-clear').on('click', function () {
-	$searchInput.val('');
+	$searchInput.text('');
 })
 
 
@@ -359,6 +359,7 @@ if ($licenseTermsContent.length > 0) {
 		insertTarget: $('#license-terms-nav-menu'),
 		headlineText: 'Licensing by Category',
 		showTopLink: false,
+		scrollOffset: 100,
 	});
 }
 
