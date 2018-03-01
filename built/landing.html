@@ -20,7 +20,6 @@
   <link rel="canonical" href="https://pixelbuddha.net/" />
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,500,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
   <header class="main-header js-main-header -violet">
@@ -150,12 +149,19 @@
 
   <div id="panel" data-slideout-ignore>
     <div class="wrapper">
-      <div class="landing-promo" data-0="background-position: 50% calc(100% + -176px);" data-350="background-position: 50% calc(100% + 300px);">
+      <div class="landing-promo">
+        <div class="landing_promo_background_left" data-0="bottom: 136px; opacity: 1; left: 50%;" data-300="bottom: -40px; opacity: 0; left: 30%;"></div>
+        <div class="landing_promo_background_right" data-0="bottom: 136px; opacity: 1; right: 50%" data-400="bottom: -300px; opacity: 0; right: 20%;"></div>
+
+        <div class="landing-promo-image-mobile-wrapper">
+          <img src="./assets/images/content/landing_promo_illustration.png" alt="" class="landing-promo-image">
+        </div>
+
         <div class="landing-promo-image-wrapper">
-          <img src="./assets/images/content/top_left.png" alt="" class="landing-promo-image-top_left" data-0="left: 0" data-250="left: -180px">
-          <img src="./assets/images/content/middle_left.png" alt="" class="landing-promo-image-middle_left" data-80="left: 0" data-350="left: -90px">
-          <img src="./assets/images/content/top_right.png" alt="" class="landing-promo-image-top_right" data-0="right: 0" data-250="right: -180px">
-          <img src="./assets/images/content/middle_right.png" alt="" class="landing-promo-image-middle_right" data-80="right: 0" data-250="right: -90px">
+          <img src="./assets/images/content/top_left.png" alt="" class="landing-promo-image-top_left" data-0="left: 0" data-100="left: -60px; opacity: 1;" data-250="left: -180px; opacity: 0;" >
+          <img src="./assets/images/content/middle_left.png" alt="" class="landing-promo-image-middle_left" data-80="left: 0; opacity: 1;" data-350="left: -90px; opacity: 0;">
+          <img src="./assets/images/content/top_right.png" alt="" class="landing-promo-image-top_right" data-0="right: 0" data-100="right: -60px; opacity: 1;" data-250="right: -140px; opacity: 0;">
+          <img src="./assets/images/content/middle_right.png" alt="" class="landing-promo-image-middle_right" data-80="right: 0; opacity: 1;" data-250="right: -90px; opacity: 0;">
           <img src="./assets/images/content/light.png" alt="" class="landing-promo-image-light">
           <img src="./assets/images/content/base.png" alt="" class="landing-promo-image">
         </div>
@@ -165,7 +171,7 @@
         </h1>
 
         <p class="landing-promo-description">
-          Become a PIxelbuddha Plus subscriber for only $10 per month and get access to extra content of premium quality. That means more outstanding freebies, crafted by the best industry's designers every week, special for you guys.
+          Become a PIxelbuddha Plus subscriber <strong>for only $10</strong> per month and get access to extra content of premium quality. That means more outstanding freebies, crafted by the best industry's designers every week, special for you guys.
         </p>
 
         <p class="landing-promo-buttons">
@@ -190,8 +196,14 @@
               <a href="#" class="product-landing-main-link">Discover Plus Catalog</a>
             </div>
 
-            <div class="product-landing-image-wrapper">
+            <div class="product-landing-image-wrapper -mobile">
               <img src="./assets/images/content/image2.png" alt="" class="product-landing-image">
+            </div>
+
+            <div class="product-landing-image-wrapper -parallax -desktop">
+              <img src="./assets/images/content/landing_membership3.png" alt="" class="product-landing-image -parallax -first" data-500="top:0" data-1000="top:-200px">
+              <img src="./assets/images/content/landing_membership2.png" alt="" class="product-landing-image -parallax -second" data-500="top:0" data-1000="top:-300px">
+              <img src="./assets/images/content/landing_membership1.png" alt="" class="product-landing-image -parallax -third" data-500="top:0" data-1000="top:280px">
             </div>
           </div>
         </div>
@@ -580,7 +592,9 @@
   <script type="text/javascript" src="assets/libs/skrollr/dist/skrollr.min.js"></script>
   <script src="assets/scripts/main.js?26"></script>
   <script type="text/javascript">
+  if (window.innerWidth > 760) {
     var s = skrollr.init();
+  }
   </script>
 </body>
 </html>

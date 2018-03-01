@@ -1,4 +1,9 @@
+.landing-promo-image-mobile-wrapper
+  display none
+
 .product-landing
+  overflow hidden
+
   &.-dark
     .product-landing-headline
       color $white
@@ -27,8 +32,8 @@
       padding 36px 0 36px 30px
 
     .product-landing-image
-      transform translate(-100px, 0)
-      width calc(100% + 70px)
+      transform translate(-450px, 0)
+      width calc(100% + 400px)
 
     .product-landing-image-wrapper,
     .product-landing-content
@@ -59,8 +64,34 @@
   flex 0 0 calc(50% + 36px)
   text-align right
 
+  &.-mobile
+    display none
+
+  &.-desktop
+    display block
+
   .product-landing-image
     width calc(100% + 100px)
+
+.product-landing-image-wrapper.-parallax
+  position relative
+  align-self stretch
+  min-height 700px
+
+.product-landing-image.-parallax
+  position absolute
+  top 0
+  left 0
+  width calc(100% + 200px)
+
+  &.-first
+    transform translate(66px, 0)
+
+  &.-second
+    transform translate(40px, 40px)
+
+  &.-third
+    transform translate(0, 10px)
 
 .product-landing-main-link
   linkDefault()
@@ -270,8 +301,8 @@
     transform translate(0)
 
   .product-landing.-right .product-landing-image
-    width 100%
-    transform translate(0)
+    width calc(100% + 400px)
+    transform translate(-450px, 0)
 
 @media(max-width 1400px)
   .product-landing .base-col
@@ -289,6 +320,24 @@
 
   .landing-promo-image-wrapper
     max-width 800px
+
+  .landing-promo-image-light
+    width 436px
+
+  .landing-promo-image-top_left
+    width 213px
+    top 52px
+
+  .landing-promo-image-middle_left
+    width 213px
+    top 147px
+
+  .landing-promo-image-top_right
+    width 307px
+
+  .landing-promo-image-middle_right
+    width 205px
+    top 152px
 
   .landing-promo-headline
     margin-top 76px
@@ -319,7 +368,7 @@
     width calc(100% + 160px)
 
   .product-landing.-right .product-landing-image
-    width calc(100% + 124px)
+    width calc(100% + 400px)
 
   .product-landing.-right .product-landing-content
     padding-left 50px
@@ -356,8 +405,37 @@
   .landing-promo
     padding-top 96px
 
+  .product-landing-image-wrapper
+    &.-mobile
+      display block
+
+    &.-desktop
+      display none
+
   .landing-promo-image-wrapper
     max-width 598px
+
+  .landing-promo-image-wrapper
+    max-width 600px
+
+  .landing-promo-image-light
+    width 326px
+
+  .landing-promo-image-top_left
+    width 160px
+    top 44px
+
+  .landing-promo-image-middle_left
+    width 160px
+    top 114px
+
+  .landing-promo-image-top_right
+    width 213px
+    top 54px
+
+  .landing-promo-image-middle_right
+    width 153px
+    top 118px
 
   .landing-promo-headline
     font-size 42px
@@ -390,6 +468,10 @@
   .product-landing-image-wrapper .product-landing-image,
   .product-landing.-right .product-landing-image
     width calc(100% - 32px)
+
+  .product-landing.-right .product-landing-image
+    transform translate(-150px, 0)
+    width 100%
 
   .product-landing .base-col
     padding 0
@@ -442,14 +524,22 @@
   .product-landing-faq-list
     column-count 1
 
+  .product-landing-faq-headline
+    text-align left
+
 @media(max-width 660px)
   .landing-promo-image
-    width 707px
+    width 700px
     position relative
     left 50%
     transform translate(-50%, 0)
 
+  .landing-promo-image-mobile-wrapper,
+  .product-landing-image-mobile-wrapper
+    display block
+
   .landing-promo-image-wrapper
+    display none
     overflow hidden
 
   .landing-promo-headline

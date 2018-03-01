@@ -1,11 +1,34 @@
 .landing-promo
   background-color $violet-background
-  background-image url('../images/content/landing_promo_background_image.png')
-  background-size 1290px 268px
-  background-position 50% calc(100% - 136px)
-  background-repeat no-repeat
   text-align center
-  padding 96px 0 106px
+  padding 116px 0 106px
+  position relative
+  overflow hidden
+
+  .landing_promo_background_left,
+  .landing_promo_background_right
+    content ''
+    display block
+    background-repeat no-repeat
+    position absolute
+    z-index 0
+    bottom 136px
+
+  .landing_promo_background_left
+    width 287px
+    height 268px
+    background-image url('../images/content/landing_promo_background_image_left.png')
+    left 50%
+    transform translate(calc(-100% - 380px), 0)
+    background-size 287px 268px
+
+  .landing_promo_background_right
+    width 287px
+    height 268px
+    background-image url('../images/content/landing_promo_background_image_right.png')
+    right 50%
+    transform translate(calc(100% + 380px), 0)
+    background-size 287px 268px
 
 .landing-promo-image-wrapper
   width 100%
@@ -62,6 +85,7 @@
   color $white
   font-family 'Josefin Sans'
   margin-top 84px
+  position relative
 
 .landing-promo-headline-highlight
   color #7c79b3
@@ -75,6 +99,7 @@
   margin 14px auto 45px
 
 .landing-promo-buttons
+  position relative
   .btn.-medium
     padding 20px 65px
 
