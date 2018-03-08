@@ -21,6 +21,7 @@
     "imagesloaded": "^4.1.1",
     "slick-carousel": "^1.8.1",
     "scrollNav": "^2.7.1",
-    "skrollr": "Prinzhorn/skrollr#^0.6.30"
+    "scrollme": "nckprsn/scrollme#^1.1.0",
+    "scrollmagic": "^2.0.5"
   }
 }

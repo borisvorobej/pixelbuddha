@@ -2690,7 +2690,7 @@ div[contenteditable=true] {
   line-height: 48px !important;
   font-family: 'Josefin Sans' !important;
   text-transform: uppercase !important;
-  text-align: left;
+  text-align: center;
   font-weight: 600 !important;
 }
 .searchInputLabel {
@@ -6028,6 +6028,36 @@ h4.text-block-headline {
   -ms-flex: 0 0 50%;
       flex: 0 0 50%;
 }
+.product-landing.-right .product-landing-image-wrapper {
+  position: relative;
+  height: 822px;
+}
+.product-landing.-right .product-landing-image-bonus1,
+.product-landing.-right .product-landing-image-bonus2,
+.product-landing.-right .product-landing-image-bonus3 {
+  width: calc(100% - 10px);
+  max-width: 580px;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-landing.-right .product-landing-image-bonus1 {
+  -webkit-transform: translate(-470px, -10px);
+          transform: translate(-470px, -10px);
+  z-index: 1;
+}
+.product-landing.-right .product-landing-image-bonus2 {
+  -webkit-transform: translate(-30px, 48px);
+          transform: translate(-30px, 48px);
+  z-index: 3;
+}
+.product-landing.-right .product-landing-image-bonus3 {
+  -webkit-transform: translate(-280px, 374px);
+          transform: translate(-280px, 374px);
+  z-index: 2;
+}
 .product-landing-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -6335,6 +6365,29 @@ h4.text-block-headline {
     -webkit-transform: translate(-450px, 0);
             transform: translate(-450px, 0);
   }
+  .product-landing.-right .product-landing-image-wrapper {
+    position: relative;
+  }
+  .product-landing.-right .product-landing-image-bonus1,
+  .product-landing.-right .product-landing-image-bonus2,
+  .product-landing.-right .product-landing-image-bonus3 {
+    width: calc(100% - 10px);
+  }
+  .product-landing.-right .product-landing-image-bonus1 {
+    -webkit-transform: translate(-470px, -10px);
+            transform: translate(-470px, -10px);
+    z-index: 1;
+  }
+  .product-landing.-right .product-landing-image-bonus2 {
+    -webkit-transform: translate(-30px, 48px);
+            transform: translate(-30px, 48px);
+    z-index: 3;
+  }
+  .product-landing.-right .product-landing-image-bonus3 {
+    -webkit-transform: translate(-280px, 374px);
+            transform: translate(-280px, 374px);
+    z-index: 2;
+  }
 }
 @media (max-width: 1400px) {
   .product-landing .base-col {
@@ -6437,10 +6490,81 @@ h4.text-block-headline {
   .product-landing-faq-headline {
     margin-bottom: 58px;
   }
+  .product-landing.-right .product-landing-image-wrapper {
+    position: relative;
+    height: 722px;
+  }
+  .product-landing.-right .product-landing-image-bonus1,
+  .product-landing.-right .product-landing-image-bonus2,
+  .product-landing.-right .product-landing-image-bonus3 {
+    width: calc(100% + 40px);
+  }
+  .product-landing.-right .product-landing-image-bonus1 {
+    -webkit-transform: translate(-380px, 5px);
+            transform: translate(-380px, 5px);
+    z-index: 1;
+  }
+  .product-landing.-right .product-landing-image-bonus2 {
+    -webkit-transform: translate(-30px, 48px);
+            transform: translate(-30px, 48px);
+    z-index: 3;
+  }
+  .product-landing.-right .product-landing-image-bonus3 {
+    -webkit-transform: translate(-280px, 335px);
+            transform: translate(-280px, 335px);
+    z-index: 2;
+  }
+}
+@media (max-height: 700px) {
+  .landing-promo {
+    padding-top: 96px;
+  }
+  .landing-promo-image-wrapper {
+    max-width: 598px;
+  }
+  .landing-promo-image-wrapper {
+    max-width: 600px;
+  }
+  .landing-promo-image-light {
+    width: 326px;
+  }
+  .landing-promo-image-top_left {
+    width: 160px;
+    top: 44px;
+  }
+  .landing-promo-image-middle_left {
+    width: 160px;
+    top: 114px;
+  }
+  .landing-promo-image-top_right {
+    width: 213px;
+    top: 54px;
+  }
+  .landing-promo-image-middle_right {
+    width: 153px;
+    top: 118px;
+  }
+  .landing-promo-headline {
+    font-size: 42px;
+    margin-top: 44px;
+  }
+  .landing-promo-description {
+    margin-top: 9px;
+    margin-bottom: 42px;
+    font-size: 16px;
+    line-height: 28px;
+    width: 650px;
+  }
+  .landing-promo-buttons .btn.-medium {
+    padding: 15px 39px;
+  }
 }
 @media (max-width: 992px) {
   .landing-promo {
     padding-top: 96px;
+  }
+  .product-landing.-right .product-landing-image-wrapper {
+    height: auto;
   }
   .product-landing-image-wrapper.-mobile {
     display: block;
@@ -7253,6 +7377,10 @@ h4.text-block-headline {
 @media (max-width: 700px) {
   .items-selector .result {
     padding: 16px 20px 14px 18px;
+  }
+  .items-selector .items-selector-item-link,
+  .items-selector .items-selector-item-block {
+    padding-left: 20px;
   }
 }
 .main-footer {

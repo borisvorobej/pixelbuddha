@@ -148,7 +148,7 @@
   <div class="panel-overflow"></div>
 
   <div id="panel" data-slideout-ignore>
-    <div class="wrapper">
+    <div class="wrapper" id="skrollr-body">
       <div class="landing-promo">
         <div class="landing_promo_background_left" data-0="bottom: 136px; opacity: 1; left: 50%;" data-300="bottom: -40px; opacity: 0; left: 30%;"></div>
         <div class="landing_promo_background_right" data-0="bottom: 136px; opacity: 1; right: 50%" data-400="bottom: -300px; opacity: 0; right: 20%;"></div>
@@ -167,7 +167,7 @@
         </div>
 
         <h1 class="landing-promo-headline">
-          Join <span class="-mobile"></span> pixelbuddha <span class="-mobile"></span>  <span class="landing-promo-headline-highlight">plus</span>
+          <span>Join <span class="-mobile"></span> pixelbuddha <span class="-mobile"></span>  <span class="landing-promo-headline-highlight">plus</span></span>
         </h1>
 
         <p class="landing-promo-description">
@@ -201,9 +201,9 @@
             </div>
 
             <div class="product-landing-image-wrapper -parallax -desktop">
-              <img src="./assets/images/content/landing_membership3.png" alt="" class="product-landing-image -parallax -first" data-500="top:0" data-1000="top:-200px">
-              <img src="./assets/images/content/landing_membership2.png" alt="" class="product-landing-image -parallax -second" data-500="top:0" data-1000="top:-300px">
-              <img src="./assets/images/content/landing_membership1.png" alt="" class="product-landing-image -parallax -third" data-500="top:0" data-1000="top:280px">
+              <img src="./assets/images/content/landing_membership3.png" alt="" class="product-landing-image -parallax -first" data-bottom-top="top:0" data-top-bottom="top:-200px">
+              <img src="./assets/images/content/landing_membership2.png" alt="" class="product-landing-image -parallax -second" data-bottom-top="top:0" data-top-bottom="top:-300px">
+              <img src="./assets/images/content/landing_membership1.png" alt="" class="product-landing-image -parallax -third" data-bottom-top="top:0" data-top-bottom="top:280px">
             </div>
           </div>
         </div>
@@ -226,8 +226,14 @@
               <a href="#" class="product-landing-main-link">Discover Time-Limited Offers</a>
             </div>
 
-            <div class="product-landing-image-wrapper">
+            <div class="product-landing-image-wrapper -mobile">
               <img src="./assets/images/content/image1.png" alt="" class="product-landing-image">
+            </div>
+
+            <div class="product-landing-image-wrapper -parallax -desktop">
+              <img src="./assets/images/content/bonuses1.png" alt="" class="product-landing-image product-landing-image-bonus1" data-bottom-top="opacity: 1" data--300-bottom="opacity: 0">
+              <img src="./assets/images/content/bonuses2.png" alt="" class="product-landing-image product-landing-image-bonus2" data-bottom-top="opacity: 0" data-200-bottom="opacity: 1" data--300-bottom="opacity: 1" data--600-bottom="opacity: 0">
+              <img src="./assets/images/content/bonuses3.png" alt="" class="product-landing-image product-landing-image-bonus3" data-300-bottom="opacity: 0" data--200-bottom="opacity: 1">
             </div>
           </div>
         </div>
@@ -592,7 +598,7 @@
   <script type="text/javascript" src="assets/libs/skrollr/dist/skrollr.min.js"></script>
   <script src="assets/scripts/main.js?26"></script>
   <script type="text/javascript">
-  if (window.innerWidth > 760) {
+  if (!('ontouchstart' in document.documentElement)) {
     var s = skrollr.init();
   }
   </script>
