@@ -7,10 +7,12 @@
   &.-dark
     .product-landing-headline
       color $white
+      max-width 530px
 
     .product-landing-description
       color #E8E8E8
       opacity .8
+      max-width 530px
 
     .product-landing-main-link
       color $violet
@@ -42,28 +44,29 @@
 .product-landing.-right
   .product-landing-image-wrapper
     position relative
-    height 822px
+    height 700px
 
   .product-landing-image-bonus1,
   .product-landing-image-bonus2,
   .product-landing-image-bonus3
-    width calc(100% - 10px)
-    max-width 580px
+    width calc(100% + 60px)
+    max-width 660px
     transform translate(0, 0)
     position absolute
     top 0
-    left 0
+    right 0
 
   .product-landing-image-bonus1
-    transform translate(-470px, -10px)
+    transform translate(-526px, 20px)
     z-index 1
 
   .product-landing-image-bonus2
-    transform translate(-30px, 48px)
+    transform translate(-40px, 104px)
+    max-width 680px
     z-index 3
 
   .product-landing-image-bonus3
-    transform translate(-280px, 374px)
+    transform translate(-310px, 460px)
     z-index 2
 
 .product-landing-wrapper
@@ -339,18 +342,16 @@
     .product-landing-image-bonus2,
     .product-landing-image-bonus3
       width calc(100% - 10px)
+      max-width 530px
 
     .product-landing-image-bonus1
-      transform translate(-470px, -10px)
-      z-index 1
+      transform translate(-430px, 30px)
 
     .product-landing-image-bonus2
-      transform translate(-30px, 48px)
-      z-index 3
+      transform translate(-40px, 104px)
 
     .product-landing-image-bonus3
-      transform translate(-280px, 374px)
-      z-index 2
+      transform translate(-310px, 390px)
 
 
 @media(max-width 1400px)
@@ -405,6 +406,7 @@
 
   .product-landing-content
     flex 0 0 calc(50% - 20px)
+    padding-right 36px
 
   .product-landing-image-wrapper
     flex 0 0 calc(50% + 20px)
@@ -453,24 +455,29 @@
   .product-landing.-right
     .product-landing-image-wrapper
       position relative
-      height 722px
+      height 700px
 
     .product-landing-image-bonus1,
     .product-landing-image-bonus2,
     .product-landing-image-bonus3
-      width calc(100% + 40px)
+      width 570px
 
     .product-landing-image-bonus1
-      transform translate(-380px, 5px)
+      transform translate(-390px, 20px)
       z-index 1
 
     .product-landing-image-bonus2
-      transform translate(-30px, 48px)
+      transform translate(40px, 92px)
       z-index 3
 
     .product-landing-image-bonus3
-      transform translate(-280px, 335px)
+      transform translate(-220px, 406px)
       z-index 2
+
+  .product-landing.-right
+    .product-landing-image-wrapper
+      height 600px
+      min-height 600px
 
 @media(max-height 700px)
   .landing-promo

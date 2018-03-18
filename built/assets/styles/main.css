@@ -5994,10 +5994,12 @@ h4.text-block-headline {
 }
 .product-landing.-dark .product-landing-headline {
   color: #fff;
+  max-width: 530px;
 }
 .product-landing.-dark .product-landing-description {
   color: #e8e8e8;
   opacity: 0.8;
+  max-width: 530px;
 }
 .product-landing.-dark .product-landing-main-link {
   color: #7c78b5;
@@ -6030,32 +6032,33 @@ h4.text-block-headline {
 }
 .product-landing.-right .product-landing-image-wrapper {
   position: relative;
-  height: 822px;
+  height: 700px;
 }
 .product-landing.-right .product-landing-image-bonus1,
 .product-landing.-right .product-landing-image-bonus2,
 .product-landing.-right .product-landing-image-bonus3 {
-  width: calc(100% - 10px);
-  max-width: 580px;
+  width: calc(100% + 60px);
+  max-width: 660px;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 .product-landing.-right .product-landing-image-bonus1 {
-  -webkit-transform: translate(-470px, -10px);
-          transform: translate(-470px, -10px);
+  -webkit-transform: translate(-526px, 20px);
+          transform: translate(-526px, 20px);
   z-index: 1;
 }
 .product-landing.-right .product-landing-image-bonus2 {
-  -webkit-transform: translate(-30px, 48px);
-          transform: translate(-30px, 48px);
+  -webkit-transform: translate(-40px, 104px);
+          transform: translate(-40px, 104px);
+  max-width: 680px;
   z-index: 3;
 }
 .product-landing.-right .product-landing-image-bonus3 {
-  -webkit-transform: translate(-280px, 374px);
-          transform: translate(-280px, 374px);
+  -webkit-transform: translate(-310px, 460px);
+          transform: translate(-310px, 460px);
   z-index: 2;
 }
 .product-landing-wrapper {
@@ -6372,21 +6375,19 @@ h4.text-block-headline {
   .product-landing.-right .product-landing-image-bonus2,
   .product-landing.-right .product-landing-image-bonus3 {
     width: calc(100% - 10px);
+    max-width: 530px;
   }
   .product-landing.-right .product-landing-image-bonus1 {
-    -webkit-transform: translate(-470px, -10px);
-            transform: translate(-470px, -10px);
-    z-index: 1;
+    -webkit-transform: translate(-430px, 30px);
+            transform: translate(-430px, 30px);
   }
   .product-landing.-right .product-landing-image-bonus2 {
-    -webkit-transform: translate(-30px, 48px);
-            transform: translate(-30px, 48px);
-    z-index: 3;
+    -webkit-transform: translate(-40px, 104px);
+            transform: translate(-40px, 104px);
   }
   .product-landing.-right .product-landing-image-bonus3 {
-    -webkit-transform: translate(-280px, 374px);
-            transform: translate(-280px, 374px);
-    z-index: 2;
+    -webkit-transform: translate(-310px, 390px);
+            transform: translate(-310px, 390px);
   }
 }
 @media (max-width: 1400px) {
@@ -6442,6 +6443,7 @@ h4.text-block-headline {
   .product-landing-content {
     -ms-flex: 0 0 calc(50% - 20px);
         flex: 0 0 calc(50% - 20px);
+    padding-right: 36px;
   }
   .product-landing-image-wrapper {
     -ms-flex: 0 0 calc(50% + 20px);
@@ -6492,27 +6494,31 @@ h4.text-block-headline {
   }
   .product-landing.-right .product-landing-image-wrapper {
     position: relative;
-    height: 722px;
+    height: 700px;
   }
   .product-landing.-right .product-landing-image-bonus1,
   .product-landing.-right .product-landing-image-bonus2,
   .product-landing.-right .product-landing-image-bonus3 {
-    width: calc(100% + 40px);
+    width: 570px;
   }
   .product-landing.-right .product-landing-image-bonus1 {
-    -webkit-transform: translate(-380px, 5px);
-            transform: translate(-380px, 5px);
+    -webkit-transform: translate(-390px, 20px);
+            transform: translate(-390px, 20px);
     z-index: 1;
   }
   .product-landing.-right .product-landing-image-bonus2 {
-    -webkit-transform: translate(-30px, 48px);
-            transform: translate(-30px, 48px);
+    -webkit-transform: translate(40px, 92px);
+            transform: translate(40px, 92px);
     z-index: 3;
   }
   .product-landing.-right .product-landing-image-bonus3 {
-    -webkit-transform: translate(-280px, 335px);
-            transform: translate(-280px, 335px);
+    -webkit-transform: translate(-220px, 406px);
+            transform: translate(-220px, 406px);
     z-index: 2;
+  }
+  .product-landing.-right .product-landing-image-wrapper {
+    height: 600px;
+    min-height: 600px;
   }
 }
 @media (max-height: 700px) {
