@@ -2,161 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c3be03-da23-4db8-ba6f-0371c9c34324" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/content/purchase_preview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/built/purchase.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/blocks/purchase.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/clipboard/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/clipboard/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/clipboard/bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/clipboard/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/clipboard/dist/clipboard.js" afterPath="$PROJECT_DIR$/built/assets/libs/clipboard/dist/clipboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/clipboard/dist/clipboard.min.js" afterPath="$PROJECT_DIR$/built/assets/libs/clipboard/dist/clipboard.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/clipboard/package.js" afterPath="$PROJECT_DIR$/built/assets/libs/clipboard/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/clipboard/package.json" afterPath="$PROJECT_DIR$/built/assets/libs/clipboard/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/clipboard/readme.md" afterPath="$PROJECT_DIR$/built/assets/libs/clipboard/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/desandro-matches-selector/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/desandro-matches-selector/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/desandro-matches-selector/matches-selector.js" afterPath="$PROJECT_DIR$/built/assets/libs/desandro-matches-selector/matches-selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/ev-emitter/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/ev-emitter/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/ev-emitter/README.md" afterPath="$PROJECT_DIR$/built/assets/libs/ev-emitter/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/ev-emitter/bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/ev-emitter/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/ev-emitter/ev-emitter.js" afterPath="$PROJECT_DIR$/built/assets/libs/ev-emitter/ev-emitter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/fizzy-ui-utils/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/fizzy-ui-utils/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/fizzy-ui-utils/bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/fizzy-ui-utils/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/fizzy-ui-utils/utils.js" afterPath="$PROJECT_DIR$/built/assets/libs/fizzy-ui-utils/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/growl/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/growl/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/growl/bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/growl/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/growl/javascripts/jquery.growl.js" afterPath="$PROJECT_DIR$/built/assets/libs/growl/javascripts/jquery.growl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/growl/package.json" afterPath="$PROJECT_DIR$/built/assets/libs/growl/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/growl/stylesheets/jquery.growl.css" afterPath="$PROJECT_DIR$/built/assets/libs/growl/stylesheets/jquery.growl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/imagesloaded/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/imagesloaded/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/imagesloaded/README.md" afterPath="$PROJECT_DIR$/built/assets/libs/imagesloaded/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/imagesloaded/bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/imagesloaded/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/imagesloaded/imagesloaded.js" afterPath="$PROJECT_DIR$/built/assets/libs/imagesloaded/imagesloaded.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/imagesloaded/imagesloaded.pkgd.js" afterPath="$PROJECT_DIR$/built/assets/libs/imagesloaded/imagesloaded.pkgd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/imagesloaded/imagesloaded.pkgd.min.js" afterPath="$PROJECT_DIR$/built/assets/libs/imagesloaded/imagesloaded.pkgd.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/AUTHORS.txt" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/AUTHORS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/LICENSE.txt" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/README.md" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/dist/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/dist/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/dist/jquery.min.map" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/dist/jquery.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/external/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/external/sizzle/dist/sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/external/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/external/sizzle/dist/sizzle.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/external/sizzle/dist/sizzle.min.map" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/external/sizzle/dist/sizzle.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/jsonp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/load.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/parseXML.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/var/location.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/var/location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/var/nonce.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/var/rquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/ajax/xhr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/attr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/classes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/prop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/attributes/val.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/core.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/access.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/parseHTML.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/ready.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/core/var/rsingleTag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/addGetHookIf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/adjustCSS.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/adjustCSS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/curCSS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/showHide.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/showHide.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/var/cssExpand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/var/getStyles.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/var/getStyles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/var/rnumnonpx.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/var/swap.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/css/var/swap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/data.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/data/Data.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/data/Data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/data/var/acceptData.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/data/var/acceptData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/data/var/dataPriv.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/data/var/dataPriv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/data/var/dataUser.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/data/var/dataUser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/deferred.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/dimensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/effects.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/effects/Tween.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/effects/animatedSelector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/event.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/alias.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/focusin.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/focusin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/trigger.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/event/trigger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/exports/amd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/exports/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/_evalUrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/buildFragment.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/buildFragment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/getAll.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/getAll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/setGlobalEval.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/setGlobalEval.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/var/rscriptType.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/var/rscriptType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/var/rtagName.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/var/rtagName.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/wrapMap.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/manipulation/wrapMap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/offset.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/queue.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/queue/delay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/selector-native.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/selector-native.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/selector-sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/selector.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/serialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing/findFilter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing/var/dir.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing/var/dir.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing/var/siblings.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/traversing/var/siblings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/arr.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/arr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/class2type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/concat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/document.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/document.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/documentElement.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/documentElement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/hasOwn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/indexOf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/pnum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/push.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/rcssNum.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/rcssNum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/slice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/var/toString.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/built/assets/libs/jquery/src/wrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/masonry/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/masonry/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/masonry/README.md" afterPath="$PROJECT_DIR$/built/assets/libs/masonry/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/masonry/bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/masonry/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/masonry/dist/masonry.pkgd.js" afterPath="$PROJECT_DIR$/built/assets/libs/masonry/dist/masonry.pkgd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/masonry/dist/masonry.pkgd.min.js" afterPath="$PROJECT_DIR$/built/assets/libs/masonry/dist/masonry.pkgd.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/masonry/masonry.js" afterPath="$PROJECT_DIR$/built/assets/libs/masonry/masonry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/outlayer/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/outlayer/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/outlayer/item.js" afterPath="$PROJECT_DIR$/built/assets/libs/outlayer/item.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/outlayer/outlayer.js" afterPath="$PROJECT_DIR$/built/assets/libs/outlayer/outlayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/scrollNav/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/scrollNav/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/scrollNav/CHANGELOG.md" afterPath="$PROJECT_DIR$/built/assets/libs/scrollNav/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/scrollNav/README.md" afterPath="$PROJECT_DIR$/built/assets/libs/scrollNav/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/scrollNav/bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/scrollNav/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/scrollNav/dist/jquery.scrollNav.js" afterPath="$PROJECT_DIR$/built/assets/libs/scrollNav/dist/jquery.scrollNav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/scrollNav/dist/jquery.scrollNav.min.js" afterPath="$PROJECT_DIR$/built/assets/libs/scrollNav/dist/jquery.scrollNav.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/scrollmagic/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/scrollmagic/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/scrollme/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/scrollme/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/libs/slick-carousel/.bower.json" afterPath="$PROJECT_DIR$/built/assets/libs/slick-carousel/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/assets/styles/main.css" afterPath="$PROJECT_DIR$/built/assets/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/built/list.html" afterPath="$PROJECT_DIR$/built/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/blocks/forms.styl" afterPath="$PROJECT_DIR$/src/assets/styles/blocks/forms.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/blocks/sections.styl" afterPath="$PROJECT_DIR$/src/assets/styles/blocks/sections.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/blocks/text-block.styl" afterPath="$PROJECT_DIR$/src/assets/styles/blocks/text-block.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/common/base.styl" afterPath="$PROJECT_DIR$/src/assets/styles/common/base.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/main.styl" afterPath="$PROJECT_DIR$/src/assets/styles/main.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -211,6 +58,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
               <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fnToString.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/builder/bower_components/jquery/src/var/fnToString.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -1258,16 +1115,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/built/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48">
-              <caret line="201" column="24" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="201" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sections.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/styles/blocks/sections.styl">
           <provider selected="true" editor-type-id="text-editor">
@@ -1333,6 +1180,7 @@
         <option value="$PROJECT_DIR$/src/assets/styles/blocks/purchase.styl" />
         <option value="$PROJECT_DIR$/built/purchase.html" />
         <option value="$PROJECT_DIR$/src/assets/styles/blocks/text-block.styl" />
+        <option value="$PROJECT_DIR$/builder/bower_components/jquery/src/var/fnToString.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -1678,16 +1526,16 @@
       <option name="presentableId" value="Default" />
       <updated>1521996128125</updated>
       <workItem from="1521996130521" duration="11470000" />
-      <workItem from="1522092119595" duration="13276000" />
+      <workItem from="1522092119595" duration="13639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24746000" />
+    <option name="totallyTimeSpent" value="25109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1697,7 +1545,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Quokka" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22465754" sideWeight="0.49499735" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22465754" sideWeight="0.49499735" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3037,6 +2885,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builder/bower_components/jquery/src/var/fnToString.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
