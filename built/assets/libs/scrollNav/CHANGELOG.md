@@ -12,6 +12,17 @@ And constructed with these guidelines:
 
 For more information on semantic versioning, please visit http://semver.org/.
 
+## v2.7.3 - March 19, 2018
+
+* Added BEM-style active classes
+
+## v2.7.2 - March 18, 2018
+
+* Fixed grunt:jshint error
+* Fixed readme typo
+* Replaced andSelf() calls with addBack()
+* Updated semver version to fix vulnerability
+
 ## v2.7.1 - February 18, 2015
 
 * Fixed package.json

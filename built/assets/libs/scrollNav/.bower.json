@@ -1,6 +1,6 @@
 {
   "name": "scrollNav",
-  "version": "2.7.1",
+  "version": "2.7.3",
   "author": {
     "name": "James Wilson",
     "email": "jimmynotjim@me.com",
@@ -36,14 +36,13 @@
     "scrolling nav"
   ],
   "homepage": "https://github.com/jimmynotjim/scrollNav",
-  "_release": "2.7.1",
+  "_release": "2.7.3",
   "_resolution": {
     "type": "version",
-    "tag": "v2.7.1",
-    "commit": "6b549796ed12dac2b78083ac3452bdfd816c94c3"
+    "tag": "v2.7.3",
+    "commit": "0829b85cbc1351cdb7d5f0dd68b66638d2e057a4"
   },
   "_source": "https://github.com/jimmynotjim/scrollNav.git",
   "_target": "^2.7.1",
-  "_originalSource": "scrollNav",
-  "_direct": true
+  "_originalSource": "scrollNav"
 }
