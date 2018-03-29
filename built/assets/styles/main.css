@@ -1842,9 +1842,9 @@ h6 {
   box-sizing: border-box;
 }
 .content-wrapper.-purchase {
-  max-width: 960px;
+  max-width: 940px;
   margin: 0 auto;
-  padding: 70px 80px 60px;
+  padding: 67px 80px 60px;
   background: #fff;
   transform: translateY(-13%);
   border-radius: 4px;
@@ -7531,7 +7531,7 @@ h4.text-block-headline {
   text-decoration: none;
 }
 .license-selector {
-  margin-top: 20px;
+  margin-top: 19px;
 }
 .license-selector .result {
   padding: 15px 30px 13px 28px;
@@ -7547,13 +7547,17 @@ h4.text-block-headline {
   color: #747474;
 }
 .discount-input {
-  margin-bottom: 18px;
+  margin-bottom: 13px;
+}
+.discount-input input {
+  padding: 7px 28px 11px !important;
+  line-height: 1.9;
 }
 .payment-method:last-child {
-  margin-left: 20px;
+  margin-left: 27px;
 }
 .cloud-payments {
-  margin: 0 0 26px 0;
+  margin: 0 0 30px 0;
 }
 .cloud-payments a {
   color: inherit;
@@ -7562,22 +7566,22 @@ h4.text-block-headline {
   text-decoration: none;
 }
 .apply-button {
-  padding-bottom: 3px;
+  padding-bottom: 1px;
 }
 .gray-line {
   border: 1px solid #e9f1f2;
   margin: 21px 0 0 0;
 }
 .gray-line.-purchase-content-bottom {
-  margin-top: 60px;
+  margin-top: 58px;
 }
 .payment-btn {
-  margin-top: 26px;
+  margin-top: 25px;
 }
 .promo {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 26px;
 }
 .promo .dotted {
   overflow: hidden;
