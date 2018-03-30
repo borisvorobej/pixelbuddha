@@ -164,6 +164,35 @@
     .input-info-icon
       fill $white
 
+.radio-element
+  input + i
+    display inline-block
+    position relative
+    width 24px
+    height 24px
+    border-radius 50px
+    background #F0F5F6
+
+
+.radio-element input
+  display none
+
+.radio-element input + i::after
+  content ''
+  transition scale 0.2s ease-in-out
+  transform scale(0)
+  background-color $violet-border
+  border-radius 50px
+  position absolute
+  top 6px
+  right 6px
+  bottom 6px
+  left 6px
+
+.radio-element input:checked + i::after
+  content ''
+  transform scale(1)
+
 @media (max-width 620px)
   .input-wrapper.-default
     .input
